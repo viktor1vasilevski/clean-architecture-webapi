@@ -34,4 +34,4 @@ This WebAPI also uses swagger, so you can test it. Just write in the URL insted 
 Then just run the project on F5 and this will build the project and it will seed the database with some data, just something to work with. (maybe you have to close the SQL Server 2014 Management Studio and start it again)
 So the project is very useful because it show how to implement Clean Architecture Design, Domain-Driven Design, Separation of Concerns, Basis of OOP, Validation and User Authentication and Authorization, Token, AutoMapper, Inversion Of Control, SOLID Principles and more.
 
-I like to mention one tiny mestake - the name Domain is wrong. It should be Domain, not Domain.
+I like to mention one tiny mestake - the name Domian is wrong. It should be Domain, not Domian.

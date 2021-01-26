@@ -68,7 +68,7 @@ namespace CleanArchitectureWebAPI.WebAPI
                 ValidateLifetime = true,
                 ClockSkew = TimeSpan.Zero
             };
-
+            // this is a comment
             services.AddAuthentication(x => x.DefaultAuthenticateScheme = JwtBearerDefaults
                     .AuthenticationScheme)
                     .AddJwtBearer(jwt =>

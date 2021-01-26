@@ -18,10 +18,12 @@ There are some steps that you have to do, to get working on you computer:
     - This will create the database with you database name with all the AspNet tables and the models.
     
     Because the API works with roles "Admin" and "User", you have to go first to create roles "Admin" and "User" in dbo.AspNetRoles 
-    with some number Id. (because "User" is with Id 2(this is set to be automatic), make "Admin" with Id 1).
-    Then you have to get registered and automatically this user will have the role "User". 
-    Notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB. 
+    with some number Id. (because "User" is with Id 2(this is set to be automatically), make "Admin" with Id 1).
+    
+4.  Next step is to get registered - automatically this user will have the role "User". 
+    Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB. 
     This user, from then on will be with the role of "Admin". 
+    
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this:
       [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")] <<<, below some other Http request).

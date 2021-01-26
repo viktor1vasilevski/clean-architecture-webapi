@@ -35,3 +35,6 @@ Then just run the project on F5 and this will build the project and it will seed
 So the project is very useful because it show how to implement Clean Architecture Design, Domain-Driven Design, Separation of Concerns, Basis of OOP, Validation and User Authentication and Authorization, Token, AutoMapper, Inversion Of Control, SOLID Principles and more.
 
 I like to mention one tiny mestake - the name Domian is wrong. It should be Domain, not Domian.
+At the very end I notice that mestake when everything was done. So i hope it doesn't bother anyone.
+
+Happy Coding :)

@@ -12,6 +12,10 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Repositories
     {
         public BalmRepository(LibraryDbContext dbContext) : base(dbContext)
         {
+            /*
+                This is the place where we create the logic for query,
+                for saving and calling data for that entity.
+             */
         }
     }
 }

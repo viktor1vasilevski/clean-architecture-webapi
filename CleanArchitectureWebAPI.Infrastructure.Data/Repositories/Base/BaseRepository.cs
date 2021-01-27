@@ -10,6 +10,10 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Repositories.Base
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : class
     {
+        /*
+            This is where we communicate with database,
+            and it stands for all the classes.              
+         */
         private readonly LibraryDbContext _dbContext;
         public BaseRepository(LibraryDbContext dbContext)
         {

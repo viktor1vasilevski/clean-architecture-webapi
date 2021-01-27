@@ -11,6 +11,9 @@ namespace CleanArchitectureWebAPI.Application.Services
 {
     public class BalmService : IBalmService
     {
+        /*
+            This is where all the logic is, in the Services. 
+        */
         private readonly IBalmRepository _balmRepository;
         private readonly IMapper _mapper;
         public BalmService(IBalmRepository balmRepository, IMapper mapper)
@@ -38,7 +41,6 @@ namespace CleanArchitectureWebAPI.Application.Services
             {
                 return false;
             }
-
         }
 
         public void EditBalm(BalmViewModel balmRequest)

@@ -8,5 +8,6 @@ namespace CleanArchitectureWebAPI.Domian.Interfaces
 {
     public interface IBalmRepository : IBaseRepository<Balm>
     {
+        // This is where we put the methods specific for that class
     }
 }

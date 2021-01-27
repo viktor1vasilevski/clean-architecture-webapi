@@ -13,6 +13,14 @@ namespace CleanArchitectureWebAPI.Infrastructure.IoC
     {
         public static void RegisterIoCServices(this IServiceCollection services)
         {
+            /*  
+                The principle is Dependency Inversion, but the way we 
+                implement the principle is Dependency Injection.
+
+                Here is where we implement the Dependency Injection.
+                It's how the layers communicate each other.
+            */
+
             // Application
             services.AddScoped<ISoapService, SoapService>();
             services.AddScoped<IOilService, OilService>();

@@ -35,7 +35,6 @@ namespace CleanArchitectureWebAPI.WebAPI
         {
             services.AddControllers();
 
-            
             services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
             {
                 builder.AllowAnyOrigin()
@@ -56,8 +55,10 @@ namespace CleanArchitectureWebAPI.WebAPI
             // Registering the HttpContext Accessor which we use for auditing in the LibraryDbContext
             services.AddHttpContextAccessor();
 
+            // Registering the AutoMapper that mapps from entity to view model and vice versa
             services.AddApplicationLayer();
 
+            // Registering the Inversion Of Control
             services.RegisterIoCServices();
 
             var singingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-my-secret-key"));

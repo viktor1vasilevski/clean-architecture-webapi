@@ -13,6 +13,10 @@ namespace CleanArchitectureWebAPI.Application.Mappers
     {
         public LibraryProfile()
         {
+            /*
+                This is where we are mapping from 
+                entity to view model and vice versa.
+            */
             CreateMap<Soap, SoapViewModel>().ReverseMap();
             CreateMap<Oil, OilViewModel>().ReverseMap();
             CreateMap<Balm, BalmViewModel>().ReverseMap();

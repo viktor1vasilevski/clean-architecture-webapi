@@ -6,6 +6,11 @@ namespace CleanArchitectureWebAPI.Domian.Interfaces.Base
 {
     public interface IBaseRepository<T> where T:class
     {
+        /*
+            This is where we put all the methods
+            that are common for all entities.
+         */
+ 
         IReadOnlyList<T> GetAll();
         T GetById(Guid id);
         T Add(T entity);

@@ -43,6 +43,7 @@ namespace CleanArchitectureWebAPI.WebAPI
                        .AllowAnyHeader();
             }));
 
+            // this is where we set the context in our database
             services.AddDbContext<LibraryDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
 
@@ -52,6 +53,7 @@ namespace CleanArchitectureWebAPI.WebAPI
 
             services.AddSwaggerDocument();
 
+            // Registering the HttpContext Accessor which we use for auditing in the LibraryDbContext
             services.AddHttpContextAccessor();
 
             services.AddApplicationLayer();
@@ -68,7 +70,7 @@ namespace CleanArchitectureWebAPI.WebAPI
                 ValidateLifetime = true,
                 ClockSkew = TimeSpan.Zero
             };
-            // this is a comment
+            
             services.AddAuthentication(x => x.DefaultAuthenticateScheme = JwtBearerDefaults
                     .AuthenticationScheme)
                     .AddJwtBearer(jwt =>

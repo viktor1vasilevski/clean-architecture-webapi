@@ -13,13 +13,14 @@ namespace CleanArchitectureWebAPI.Infrastructure.IoC
     {
         public static void RegisterIoCServices(this IServiceCollection services)
         {
+            // Application
             services.AddScoped<ISoapService, SoapService>();
-            services.AddScoped<ISoapRepository, SoapRepository>();
-
             services.AddScoped<IOilService, OilService>();
-            services.AddScoped<IOilRepository, OilRepository>();
-
             services.AddScoped<IBalmService, BalmService>();
+
+            // Domain.Interfaces > Infrastructure.Data.Repositories
+            services.AddScoped<ISoapRepository, SoapRepository>();
+            services.AddScoped<IOilRepository, OilRepository>();
             services.AddScoped<IBalmRepository, BalmRepository>();
         }
     }

@@ -8,7 +8,7 @@ namespace CleanArchitectureWebAPI.WebAPI.ViewModels
 {
     public class RegisterViewModel
     {
-        [Required , RegularExpression(@"^[a-zA-Z0-9_-]{3,15}$")]
+        [Required, RegularExpression(@"^[a-zA-Z0-9_-]{3,15}$")]
         public string UserName { get; set; }
 
         [Required, EmailAddress]

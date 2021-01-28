@@ -49,7 +49,8 @@ namespace CleanArchitectureWebAPI.WebAPI
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<LibraryDbContext>()
                 .AddDefaultTokenProviders();
-
+            
+            // Registering the swagger
             services.AddSwaggerDocument();
 
             // Registering the HttpContext Accessor which we use for auditing in the LibraryDbContext

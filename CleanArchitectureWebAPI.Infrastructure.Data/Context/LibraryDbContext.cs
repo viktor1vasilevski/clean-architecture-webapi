@@ -26,8 +26,8 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
         public DbSet<Balm> Balms { get; set; }
         public DbSet<Oil> Oils { get; set; }
 
-        public override int SaveChanges()
-        {
+            public override int SaveChanges()
+          {
             // Get all the entities that inherit from AuditableEntity
             // and have a state of Added or Modified
             var entries = ChangeTracker
@@ -43,7 +43,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                 // the CreatedAt and CreatedBy properties
                 if (entityEntry.State == EntityState.Added)
                 {
-                    ((AuditableBaseEntity)entityEntry.Entity).Created = DateTime.UtcNow;
+                          ((AuditableBaseEntity)entityEntry.Entity).Created = DateTime.UtcNow;
                     ((AuditableBaseEntity)entityEntry.Entity).CreatedBy = this._httpContextAccessor?.HttpContext?.User?.Identity?.Name ?? "MyApp";
                 }
                 else

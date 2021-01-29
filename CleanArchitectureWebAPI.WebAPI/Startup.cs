@@ -42,13 +42,13 @@ namespace CleanArchitectureWebAPI.WebAPI
                        .AllowAnyHeader();
             }));
 
-            // this is where we set the context in our database
-            services.AddDbContext<LibraryDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
-
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<LibraryDbContext>()
-                .AddDefaultTokenProviders();
+            /*
+                Adding Base Infrastructure(DbContext, Identity, Token, IoC)
+                for this project. It was just to much code, specially with
+                the setting for the token.
+                So all the code is in the DependencyInjection class
+            */
+            services.AddInfrastructure(Configuration);
             
             // Registering the swagger
             services.AddSwaggerDocument();
@@ -58,27 +58,6 @@ namespace CleanArchitectureWebAPI.WebAPI
 
             // Registering the AutoMapper that mapps from entity to view model and vice versa
             services.AddApplicationLayer();
-
-            // Registering the Inversion Of Control
-            services.RegisterIoCServices();
-
-            var singingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-my-secret-key"));
-
-            var tokenValidationParameters = new TokenValidationParameters()
-            {
-                IssuerSigningKey = singingKey,
-                ValidateIssuer = false,
-                ValidateAudience = false,
-                ValidateLifetime = true,
-                ClockSkew = TimeSpan.Zero
-            };
-            
-            services.AddAuthentication(x => x.DefaultAuthenticateScheme = JwtBearerDefaults
-                    .AuthenticationScheme)
-                    .AddJwtBearer(jwt =>
-                    {
-                        jwt.TokenValidationParameters = tokenValidationParameters;
-                    });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

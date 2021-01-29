@@ -15,21 +15,10 @@ using System.Text;
 
 namespace CleanArchitectureWebAPI.Infrastructure.IoC
 {
-    public static class DependencyInjection
+    public static class DependencyContainer
     {
-        public static void AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
+        public static void AddIoCService(this IServiceCollection services)
         {
-
-            // this is where we set the context in our database
-            services.AddDbContext<LibraryDbContext>(options =>
-                options.UseSqlServer(configuration.GetConnectionString("MyConnectionString")));
-
-
-            // Setting Identity
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<LibraryDbContext>()
-                .AddDefaultTokenProviders();
-
             // IoC - Inversion Of Control
             // Application
             services.AddScoped<ISoapService, SoapService>();

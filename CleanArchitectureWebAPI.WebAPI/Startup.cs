@@ -42,8 +42,18 @@ namespace CleanArchitectureWebAPI.WebAPI
                        .AllowAnyHeader();
             }));
 
-            // Registering basic infrastructure
-            services.AddInfrastructure(Configuration);
+            // this is where we register the context in our database
+            services.AddDbContext<LibraryDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
+
+
+            // Setting Identity
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<LibraryDbContext>()
+                .AddDefaultTokenProviders();
+
+            // Registering Inversion Of Control
+            services.AddIoCService();
 
             // Setting JWT Token
             var singingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-my-secret-key"));

@@ -42,14 +42,28 @@ namespace CleanArchitectureWebAPI.WebAPI
                        .AllowAnyHeader();
             }));
 
-            /*
-                Adding Base Infrastructure(DbContext, Identity, Token, IoC)
-                for this project. It was just to much code, specially with
-                the setting for the token.
-                So all the code is in the DependencyInjection class
-            */
+            // Registering basic infrastructure
             services.AddInfrastructure(Configuration);
-            
+
+            // Setting JWT Token
+            var singingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-my-secret-key"));
+
+            var tokenValidationParameters = new TokenValidationParameters()
+            {
+                IssuerSigningKey = singingKey,
+                ValidateIssuer = false,
+                ValidateAudience = false,
+                ValidateLifetime = true,
+                ClockSkew = TimeSpan.Zero
+            };
+
+            services.AddAuthentication(x => x.DefaultAuthenticateScheme = JwtBearerDefaults
+                    .AuthenticationScheme)
+                    .AddJwtBearer(jwt =>
+                    {
+                        jwt.TokenValidationParameters = tokenValidationParameters;
+                    });
+
             // Registering the swagger
             services.AddSwaggerDocument();
 

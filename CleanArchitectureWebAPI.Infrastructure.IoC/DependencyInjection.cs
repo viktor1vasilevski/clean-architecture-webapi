@@ -42,24 +42,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.IoC
             services.AddScoped<IBalmRepository, BalmRepository>();
 
 
-            // Setting JWT Token
-            var singingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-my-secret-key"));
-
-            var tokenValidationParameters = new TokenValidationParameters()
-            {
-                IssuerSigningKey = singingKey,
-                ValidateIssuer = false,
-                ValidateAudience = false,
-                ValidateLifetime = true,
-                ClockSkew = TimeSpan.Zero
-            };
-
-            services.AddAuthentication(x => x.DefaultAuthenticateScheme = JwtBearerDefaults
-                    .AuthenticationScheme)
-                    .AddJwtBearer(jwt =>
-                    {
-                        jwt.TokenValidationParameters = tokenValidationParameters;
-                    });
+            
         }
     }
 }

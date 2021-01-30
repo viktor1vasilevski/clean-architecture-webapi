@@ -1,5 +1,6 @@
 # Clean-Architecture-WebAPI
 
+
 This is a WebAPI, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
 You can add your own models, validations, etc, and you can actually create MVC project on top of it, or just 
 use it as a api, deployed locally or publish on some server and use some front-end framework to show the data.
@@ -57,5 +58,3 @@ This project is very useful because it show how to implement Clean Architecture 
 
 I like to mention one tiny mestake - the name Domian is wrong. It should be Domain, not Domian.
 At the very end I notice that mestake when everything was done. So I hope it doesn't bother anyone.
-
-Happy Coding :)

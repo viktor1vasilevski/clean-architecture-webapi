@@ -14,19 +14,35 @@ There are some steps that you have to do, to get working on you computer:
     and in the Package Manager Console your Default project is CleanArchitectureWebAPI.Infrastructure.Data selected.
     
     - this will create folder Migration in CleanArchitectureWebAPI.Infrastructure.Data with the migrations. 
-      This will create the Migration with all the ASP.NET tables and models.
       
 3.  When this is done just type in the Package Manager Console: update-database.
-    - This will create the database with you database name with all the ASP.NET Identity tables and the models.
-    - In the WebAPI project it will also be created folder Log with two files. One .json file and other .txt.
+    - this will create the database with you database name with all the ASP.NET Identity tables and the models.
+    - then just run the project on F5 and this will build the project and it will seed the database with some data, just something to work with. (maybe you have to close the         SQL Server 2014 Management Studio and start it again)
+    - in the WebAPI project it will also be created folder Log with two files. One .json file and other .txt.
       These are for detail logging information.
     
-    Because the API works with roles "Admin" and "User", you have to go first to create roles "Admin" and "User" in dbo.AspNetRoles 
-    with some number Id. (because "User" is with Id 2(this is set to be automatically), make "Admin" with Id 1).
+4.  Next step is that you have to create "Admin" to take full experience of the API. 
+    - because the API works with roles "Admin" and "User", you have to go first to create roles "Admin" and "User" in dbo.AspNetRoles.
     
-4.  Next step is to get registered - automatically this user will have the role "User". 
-    Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB. 
-    This user, from then on will be with the role of "Admin". 
+    - you can use this set of commands in SQL Server 2014 Management Studio to create the roles "Admin" and "User".
+    
+    USE {yourDatabaseName}
+    GO
+    INSERT INTO dbo.AspNetRoles(Id, Name, NormalizedName, ConcurrencyStamp)
+    VALUES (1, 'Admin', 'ADMIN', null)
+    INSERT INTO dbo.AspNetRoles(Id, Name, NormalizedName, ConcurrencyStamp)
+    VALUES (2, 'User', 'USER', null)
+    
+5.  Next step is to register some user.
+    - you can {url}/swagger here just to see what input should you provide to get registered. (you can user Postman or Fiddler)
+    - after you get registered, automatically this user will have the role "User". 
+       Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB.
+       Or write this command in SQL
+       
+       UPDATE [dbo].[AspNetUserRoles] SET RoleId = 1 
+       WHERE UserId = '{userId}'
+       
+       This user, from then on will be with the role of "Admin". 
     
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this:
@@ -36,8 +52,8 @@ This WebAPI uses JSON Web Token (JWT) for Authorization and Information Exchange
 This WebAPI also uses swagger, so you can test it. Just write in the URL insted of {url}/api/soaps, or {url}/api/balms, just write {url}/swagger.
 This WebAPI uses Serilog for activity tracking.
 
-Then just run the project on F5 and this will build the project and it will seed the database with some data, just something to work with. (maybe you have to close the SQL Server 2014 Management Studio and start it again)
-So the project is very useful because it show how to implement Clean Architecture Design, Domain-Driven Design, Separation of Concerns, Basis of OOP, Validation and User Authentication and Authorization, Token, AutoMapper, Inversion Of Control, SOLID Principles and more.
+
+This project is very useful because it show how to implement Clean Architecture Design, Domain-Driven Design, Separation of Concerns, the Basis of OOP, Validation and User Authentication and Authorization, Token, AutoMapper, Inversion Of Control, SOLID Principles and more.
 
 I like to mention one tiny mestake - the name Domian is wrong. It should be Domain, not Domian.
 At the very end I notice that mestake when everything was done. So I hope it doesn't bother anyone.

@@ -28,6 +28,8 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         [SwaggerResponse(HttpStatusCode.NotFound, null, Description = "List Of Soaps Is Empty")]
         public IActionResult GetAll()
         {
+
+            throw new Exception();
             var soapListViewModel = _soapService.GetSoaps();
             if (soapListViewModel != null)
             {
@@ -37,6 +39,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             {
                 return NotFound();
             }
+            
         }
 
 

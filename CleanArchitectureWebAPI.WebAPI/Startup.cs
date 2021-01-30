@@ -1,6 +1,7 @@
 using CleanArchitectureWebAPI.Application;
 using CleanArchitectureWebAPI.Infrastructure.Data.Context;
 using CleanArchitectureWebAPI.Infrastructure.IoC;
+using CleanArchitectureWebAPI.WebAPI.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -13,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Serilog;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -57,7 +59,6 @@ namespace CleanArchitectureWebAPI.WebAPI
 
             // Setting JWT Token
             var singingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-my-secret-key"));
-
             var tokenValidationParameters = new TokenValidationParameters()
             {
                 IssuerSigningKey = singingKey,
@@ -66,7 +67,6 @@ namespace CleanArchitectureWebAPI.WebAPI
                 ValidateLifetime = true,
                 ClockSkew = TimeSpan.Zero
             };
-
             services.AddAuthentication(x => x.DefaultAuthenticateScheme = JwtBearerDefaults
                     .AuthenticationScheme)
                     .AddJwtBearer(jwt =>
@@ -93,6 +93,12 @@ namespace CleanArchitectureWebAPI.WebAPI
             }
 
             app.UseHttpsRedirection();
+
+            // Request Logging middleware
+            app.UseSerilogRequestLogging();
+
+            // Error Logging middleware
+            app.UseMiddleware<ErrorLoggingMiddleware>();
 
             app.UseRouting();
 

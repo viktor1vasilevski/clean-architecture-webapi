@@ -29,9 +29,6 @@ namespace CleanArchitectureWebAPI.Infrastructure.IoC
             services.AddScoped<ISoapRepository, SoapRepository>();
             services.AddScoped<IOilRepository, OilRepository>();
             services.AddScoped<IBalmRepository, BalmRepository>();
-
-
-            
         }
     }
 }

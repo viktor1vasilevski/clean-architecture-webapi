@@ -4,6 +4,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Serilog;
+using Serilog.Formatting.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,15 +17,40 @@ namespace CleanArchitectureWebAPI.WebAPI
     {
         public static void Main(string[] args)
         {
-            var host = CreateHostBuilder(args).Build();
+            // Read configuration from appsetting.json
+            var config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
-            SeedDatabase(host);
+            // Initialize logger
+            Log.Logger = new LoggerConfiguration()
+                .ReadFrom.Configuration(config)
+                .WriteTo.File("Logs/log.txt", rollingInterval: RollingInterval.Day, outputTemplate: "{Timestamp} {Message}{NewLine:1}{Exception:1}")
+                .WriteTo.File(new JsonFormatter(), "Logs/log.json", rollingInterval: RollingInterval.Day)
+                .WriteTo.Console()
+                .CreateLogger();
 
-            host.Run();
+            try
+            {
+                Log.Information("Application is starting");
+
+                var host = CreateHostBuilder(args).Build();
+
+                SeedDatabase(host);
+
+                host.Run();
+            }
+            catch (Exception e)
+            {
+                Log.Error(e, "The application failed to start!");
+            }
+            finally
+            {
+                Log.CloseAndFlush();
+            }
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
+                .UseSerilog()
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();

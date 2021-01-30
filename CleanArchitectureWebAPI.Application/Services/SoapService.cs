@@ -22,6 +22,9 @@ namespace CleanArchitectureWebAPI.Application.Services
         {
             var soap = _mapper.Map<Soap>(soapRequest);
             var addedSoap = _soapRepository.Add(soap);
+
+            _soapRepository.SaveChanges();
+
             return _mapper.Map<SoapViewModel>(addedSoap);
         }
 
@@ -32,6 +35,8 @@ namespace CleanArchitectureWebAPI.Application.Services
             if (soap != null)
             {
                 _soapRepository.Delete(soap);
+                _soapRepository.SaveChanges();
+
                 return true;
             }
             else
@@ -44,6 +49,8 @@ namespace CleanArchitectureWebAPI.Application.Services
         {
             var soap = _mapper.Map<Soap>(soapRequest);
             _soapRepository.Update(soap);
+
+            _soapRepository.SaveChanges();
         }
 
         public SoapViewModel GetSoapById(Guid id)

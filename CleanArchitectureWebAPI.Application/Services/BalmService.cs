@@ -25,6 +25,9 @@ namespace CleanArchitectureWebAPI.Application.Services
         {
             var balm = _mapper.Map<Balm>(balmRequest);
             var addedBalm = _balmRepository.Add(balm);
+
+            _balmRepository.SaveChanges();
+
             return _mapper.Map<BalmViewModel>(addedBalm);
         }
 
@@ -35,6 +38,8 @@ namespace CleanArchitectureWebAPI.Application.Services
             if (balm != null)
             {
                 _balmRepository.Delete(balm);
+                _balmRepository.SaveChanges();
+
                 return true;
             }
             else
@@ -47,6 +52,8 @@ namespace CleanArchitectureWebAPI.Application.Services
         {
             var balm = _mapper.Map<Balm>(balmRequest);
             _balmRepository.Update(balm);
+
+            _balmRepository.SaveChanges();
         }
 
         public BalmViewModel GetBalmById(Guid id)

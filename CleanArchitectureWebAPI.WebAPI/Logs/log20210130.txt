@@ -1,0 +1,438 @@
+01/30/2021 19:43:55 +01:00 Application is starting
+01/30/2021 19:43:57 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:42:11 +01:00 Application is starting
+01/30/2021 23:42:13 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("14"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT OBJECT_ID(N'[__EFMigrationsHistory]');"
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];"
+01/30/2021 23:42:13 +01:00 No migrations were applied. The database is already up to date.
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT 1"
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""
+IF EXISTS
+    (SELECT *
+     FROM [sys].[objects] o
+     WHERE [o].[type] = 'U'
+     AND [o].[is_ms_shipped] = 0
+     AND NOT EXISTS (SELECT *
+         FROM [sys].[extended_properties] AS [ep]
+         WHERE [ep].[major_id] = [o].[object_id]
+             AND [ep].[minor_id] = 0
+             AND [ep].[class] = 1
+             AND [ep].[name] = N'microsoft_database_tools_support'
+    )
+)
+SELECT 1 ELSE SELECT 0"
+01/30/2021 23:42:13 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Soaps] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("29"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Soaps] ([Id], [Brand], [Created], [CreatedBy], [Description], [Edition], [LastModified], [LastModifiedBy], [URL], [UnitPrice], [UnitQuantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Soaps] ([Id], [Brand], [Created], [CreatedBy], [Description], [Edition], [LastModified], [LastModifiedBy], [URL], [UnitPrice], [UnitQuantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Soaps] ([Id], [Brand], [Created], [CreatedBy], [Description], [Edition], [LastModified], [LastModifiedBy], [URL], [UnitPrice], [UnitQuantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Oils] AS [o]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Oils] ([Id], [Brand], [Created], [CreatedBy], [Description], [LastModified], [LastModifiedBy], [LiquidVolume], [Scent], [URL], [UnitPrice], [UnitQuantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Oils] ([Id], [Brand], [Created], [CreatedBy], [Description], [LastModified], [LastModifiedBy], [LiquidVolume], [Scent], [URL], [UnitPrice], [UnitQuantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("4"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (DbType = Int32), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Int32), @p11='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Oils] ([Id], [Brand], [Created], [CreatedBy], [Description], [LastModified], [LastModifiedBy], [LiquidVolume], [Scent], [URL], [UnitPrice], [UnitQuantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Balms] AS [b]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("2"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Balms] ([Id], [Brand], [Created], [CreatedBy], [Description], [LastModified], [LastModifiedBy], [URL], [UnitPrice], [UnitQuantity], [Volume])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Balms] ([Id], [Brand], [Created], [CreatedBy], [Description], [LastModified], [LastModifiedBy], [URL], [UnitPrice], [UnitQuantity], [Volume])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (DbType = DateTime2), @p6='?' (Size = 4000), @p7='?' (Size = 4000), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Balms] ([Id], [Brand], [Created], [CreatedBy], [Description], [LastModified], [LastModifiedBy], [URL], [UnitPrice], [UnitQuantity], [Volume])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+01/30/2021 23:42:14 +01:00 User profile is available. Using '"C:\Users\VG\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+01/30/2021 23:42:14 +01:00 Application started. Press Ctrl+C to shut down.
+01/30/2021 23:42:14 +01:00 Hosting environment: "Development"
+01/30/2021 23:42:14 +01:00 Content root path: "C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI"
+01/30/2021 23:42:14 +01:00 Request starting HTTP/2.0 GET https://localhost:44342/api/soaps  
+01/30/2021 23:42:14 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:42:14 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:42:14 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:42:14 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:42:14 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:42:14 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 212.7178ms
+01/30/2021 23:42:14 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:42:14 +01:00 HTTP "GET" "/api/soaps" responded 200 in 312.4533 ms
+01/30/2021 23:42:14 +01:00 Request finished in 326.2978ms 200 application/json; charset=utf-8
+01/30/2021 23:42:14 +01:00 Request starting HTTP/2.0 GET https://localhost:44342/favicon.ico  
+01/30/2021 23:42:14 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.8441 ms
+01/30/2021 23:42:14 +01:00 Request finished in 6.6394ms 404 
+01/30/2021 23:42:54 +01:00 Request starting HTTP/1.1 GET https://localhost:44342/api/soaps application/json 631
+01/30/2021 23:42:54 +01:00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+01/30/2021 23:42:54 +01:00 "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+01/30/2021 23:42:54 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:42:54 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:42:54 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:42:54 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:42:54 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:42:54 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 40.745ms
+01/30/2021 23:42:54 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:42:54 +01:00 HTTP "GET" "/api/soaps" responded 200 in 294.7358 ms
+01/30/2021 23:42:54 +01:00 Request finished in 303.1581ms 200 application/json; charset=utf-8
+01/30/2021 23:43:10 +01:00 Request starting HTTP/1.1 DELETE https://localhost:44342/api/soaps/5cbd1a1a-53d9-4e48-46db-08d8c57049de application/json 631
+01/30/2021 23:43:10 +01:00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+01/30/2021 23:43:10 +01:00 "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+01/30/2021 23:43:10 +01:00 Authorization failed.
+01/30/2021 23:43:10 +01:00 AuthenticationScheme: "Bearer" was challenged.
+01/30/2021 23:43:10 +01:00 HTTP "DELETE" "/api/soaps/5cbd1a1a-53d9-4e48-46db-08d8c57049de" responded 401 in 12.6689 ms
+01/30/2021 23:43:10 +01:00 Request finished in 15.0431ms 401 
+01/30/2021 23:44:15 +01:00 Request starting HTTP/1.1 POST https://localhost:44342/account/register application/json 133
+01/30/2021 23:44:15 +01:00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+01/30/2021 23:44:15 +01:00 "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+01/30/2021 23:44:15 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.AccountController.Register (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:44:15 +01:00 Route matched with "{action = \"Register\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Microsoft.AspNetCore.Identity.IdentityUser]] Register(CleanArchitectureWebAPI.WebAPI.ViewModels.RegisterViewModel)" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.AccountController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:44:15 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("7"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (DbType = Int32), @p2='?' (Size = 4000), @p3='?' (Size = 256), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = DateTimeOffset), @p7='?' (Size = 256), @p8='?' (Size = 256), @p9='?' (Size = 4000), @p10='?' (Size = 4000), @p11='?' (DbType = Boolean), @p12='?' (Size = 4000), @p13='?' (DbType = Boolean), @p14='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUsers] ([Id], [AccessFailedCount], [ConcurrencyStamp], [Email], [EmailConfirmed], [LockoutEnabled], [LockoutEnd], [NormalizedEmail], [NormalizedUserName], [PasswordHash], [PhoneNumber], [PhoneNumberConfirmed], [SecurityStamp], [TwoFactorEnabled], [UserName])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14);"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("4"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("2"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("3"ms) [Parameters=["@__p_0='?' (Size = 450), @__p_1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[UserId], [a].[RoleId]
+FROM [AspNetUserRoles] AS [a]
+WHERE ([a].[UserId] = @__p_0) AND ([a].[RoleId] = @__p_1)"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("1"ms) [Parameters=["@__normalizedRoleName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedRoleName_0"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("4"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p0='?' (Size = 450), @p1='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [AspNetUserRoles] ([RoleId], [UserId])
+VALUES (@p0, @p1);"
+01/30/2021 23:44:15 +01:00 Executed DbCommand ("4"ms) [Parameters=["@p14='?' (Size = 450), @p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p15='?' (Size = 4000), @p2='?' (Size = 256), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = DateTimeOffset), @p6='?' (Size = 256), @p7='?' (Size = 256), @p8='?' (Size = 4000), @p9='?' (Size = 4000), @p10='?' (DbType = Boolean), @p11='?' (Size = 4000), @p12='?' (DbType = Boolean), @p13='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [AspNetUsers] SET [AccessFailedCount] = @p0, [ConcurrencyStamp] = @p1, [Email] = @p2, [EmailConfirmed] = @p3, [LockoutEnabled] = @p4, [LockoutEnd] = @p5, [NormalizedEmail] = @p6, [NormalizedUserName] = @p7, [PasswordHash] = @p8, [PhoneNumber] = @p9, [PhoneNumberConfirmed] = @p10, [SecurityStamp] = @p11, [TwoFactorEnabled] = @p12, [UserName] = @p13
+WHERE [Id] = @p14 AND [ConcurrencyStamp] = @p15;
+SELECT @@ROWCOUNT;"
+01/30/2021 23:44:15 +01:00 Executing ObjectResult, writing value of type '"Microsoft.AspNetCore.Identity.IdentityUser"'.
+01/30/2021 23:44:15 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.AccountController.Register (CleanArchitectureWebAPI.WebAPI)" in 390.2531ms
+01/30/2021 23:44:15 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.AccountController.Register (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:44:15 +01:00 HTTP "POST" "/account/register" responded 200 in 415.6625 ms
+01/30/2021 23:44:15 +01:00 Request finished in 420.2286ms 200 application/json; charset=utf-8
+01/30/2021 23:46:07 +01:00 Request starting HTTP/1.1 GET https://localhost:44342/api/soaps application/json 133
+01/30/2021 23:46:07 +01:00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+01/30/2021 23:46:07 +01:00 "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+01/30/2021 23:46:07 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:46:07 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:46:07 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:46:07 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:46:07 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:46:07 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 11.5758ms
+01/30/2021 23:46:07 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:46:07 +01:00 HTTP "GET" "/api/soaps" responded 200 in 14.1862 ms
+01/30/2021 23:46:07 +01:00 Request finished in 18.4352ms 200 application/json; charset=utf-8
+01/30/2021 23:46:25 +01:00 Request starting HTTP/1.1 DELETE https://localhost:44342/api/soaps/5cbd1a1a-53d9-4e48-46db-08d8c57049de application/json 133
+01/30/2021 23:46:25 +01:00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+01/30/2021 23:46:25 +01:00 "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+01/30/2021 23:46:25 +01:00 Authorization failed.
+01/30/2021 23:46:25 +01:00 AuthenticationScheme: "Bearer" was challenged.
+01/30/2021 23:46:25 +01:00 HTTP "DELETE" "/api/soaps/5cbd1a1a-53d9-4e48-46db-08d8c57049de" responded 401 in 8.9232 ms
+01/30/2021 23:46:25 +01:00 Request finished in 10.9533ms 401 
+01/30/2021 23:46:54 +01:00 Request starting HTTP/1.1 POST https://localhost:44342/account/signin application/json 61
+01/30/2021 23:46:54 +01:00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+01/30/2021 23:46:54 +01:00 "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+01/30/2021 23:46:54 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.AccountController.SignIn (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:46:54 +01:00 Route matched with "{action = \"SignIn\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] SignIn(CleanArchitectureWebAPI.WebAPI.ViewModels.SignInViewModel)" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.AccountController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:46:54 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:46:54 +01:00 Executed DbCommand ("2"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+01/30/2021 23:46:54 +01:00 Executed DbCommand ("2"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0"
+01/30/2021 23:46:54 +01:00 Executed DbCommand ("3"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+01/30/2021 23:46:54 +01:00 Executed DbCommand ("1"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0"
+01/30/2021 23:46:54 +01:00 Executed DbCommand ("1"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0"
+01/30/2021 23:46:54 +01:00 AuthenticationScheme: "Identity.Application" signed in.
+01/30/2021 23:46:54 +01:00 Executed DbCommand ("1"ms) [Parameters=["@__normalizedUserName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[Email], [a].[EmailConfirmed], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedUserName] = @__normalizedUserName_0"
+01/30/2021 23:46:54 +01:00 Executed DbCommand ("1"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0"
+01/30/2021 23:46:54 +01:00 Executing ObjectResult, writing value of type '"<>f__AnonymousType0`4[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]"'.
+01/30/2021 23:46:54 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.AccountController.SignIn (CleanArchitectureWebAPI.WebAPI)" in 211.6442ms
+01/30/2021 23:46:54 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.AccountController.SignIn (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:46:54 +01:00 HTTP "POST" "/account/signin" responded 200 in 218.2524 ms
+01/30/2021 23:46:54 +01:00 Request finished in 222.6789ms 200 application/json; charset=utf-8
+01/30/2021 23:47:15 +01:00 Request starting HTTP/1.1 GET https://localhost:44342/api/soaps application/json 61
+01/30/2021 23:47:15 +01:00 Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'.
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateTokenPayload(JwtSecurityToken jwtToken, TokenValidationParameters validationParameters)
+   at System.IdentityModel.Tokens.Jwt.JwtSecurityTokenHandler.ValidateToken(String token, TokenValidationParameters validationParameters, SecurityToken& validatedToken)
+   at Microsoft.AspNetCore.Authentication.JwtBearer.JwtBearerHandler.HandleAuthenticateAsync()
+01/30/2021 23:47:15 +01:00 "Bearer" was not authenticated. Failure message: "IDX10223: Lifetime validation failed. The token is expired. ValidTo: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]', Current time: '[PII is hidden. For more details, see https://aka.ms/IdentityModel/PII.]'."
+01/30/2021 23:47:15 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:47:15 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:47:15 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:47:15 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:47:15 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:47:15 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 11.9242ms
+01/30/2021 23:47:15 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:47:15 +01:00 HTTP "GET" "/api/soaps" responded 200 in 15.0327 ms
+01/30/2021 23:47:15 +01:00 Request finished in 16.1263ms 200 application/json; charset=utf-8
+01/30/2021 23:47:36 +01:00 Request starting HTTP/1.1 DELETE https://localhost:44342/api/soaps/5cbd1a1a-53d9-4e48-46db-08d8c57049de application/json 61
+01/30/2021 23:47:36 +01:00 Successfully validated the token.
+01/30/2021 23:47:36 +01:00 Authorization was successful.
+01/30/2021 23:47:36 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:47:36 +01:00 Route matched with "{action = \"Delete\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Delete(System.Guid)" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:47:36 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:47:36 +01:00 Executed DbCommand ("1"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]
+WHERE [s].[Id] = @__get_Item_0"
+01/30/2021 23:47:36 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Soaps]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+01/30/2021 23:47:36 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel"'.
+01/30/2021 23:47:36 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete (CleanArchitectureWebAPI.WebAPI)" in 37.7002ms
+01/30/2021 23:47:36 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:47:36 +01:00 HTTP "DELETE" "/api/soaps/5cbd1a1a-53d9-4e48-46db-08d8c57049de" responded 200 in 59.0754 ms
+01/30/2021 23:47:36 +01:00 Request finished in 60.3722ms 200 application/json; charset=utf-8
+01/30/2021 23:47:56 +01:00 Request starting HTTP/1.1 GET https://localhost:44342/api/soaps application/json 61
+01/30/2021 23:47:56 +01:00 Successfully validated the token.
+01/30/2021 23:47:56 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:47:56 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:47:56 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:47:56 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:47:56 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:47:56 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 4.3666ms
+01/30/2021 23:47:56 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:47:56 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.4371 ms
+01/30/2021 23:47:56 +01:00 Request finished in 12.1461ms 200 application/json; charset=utf-8
+01/30/2021 23:49:38 +01:00 Request starting HTTP/1.1 POST https://localhost:44342/api/soaps application/json 283
+01/30/2021 23:49:38 +01:00 Successfully validated the token.
+01/30/2021 23:49:38 +01:00 Authorization was successful.
+01/30/2021 23:49:38 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:49:38 +01:00 Route matched with "{action = \"AddOrEdit\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult AddOrEdit(CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel)" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:49:46 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:50:38 +01:00 Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (DbType = DateTime2), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = DateTime2), @p7='?' (Size = 4000), @p8='?' (Size = 4000), @p9='?' (DbType = Int32), @p10='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+INSERT INTO [Soaps] ([Id], [Brand], [Created], [CreatedBy], [Description], [Edition], [LastModified], [LastModifiedBy], [URL], [UnitPrice], [UnitQuantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);"
+01/30/2021 23:50:47 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel"'.
+01/30/2021 23:50:49 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)" in 71653.6164ms
+01/30/2021 23:50:49 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:50:49 +01:00 HTTP "POST" "/api/soaps" responded 200 in 71662.9709 ms
+01/30/2021 23:50:49 +01:00 Request finished in 71666.5939ms 200 application/json; charset=utf-8
+01/30/2021 23:50:58 +01:00 Request starting HTTP/1.1 GET https://localhost:44342/api/soaps application/json 283
+01/30/2021 23:50:58 +01:00 Successfully validated the token.
+01/30/2021 23:50:58 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:50:58 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:50:58 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:50:58 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:50:58 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:50:58 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 6.6683ms
+01/30/2021 23:50:58 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:50:58 +01:00 HTTP "GET" "/api/soaps" responded 200 in 8.3433 ms
+01/30/2021 23:50:58 +01:00 Request finished in 8.8947ms 200 application/json; charset=utf-8
+01/30/2021 23:51:14 +01:00 Request starting HTTP/1.1 POST https://localhost:44342/api/soaps application/json 347
+01/30/2021 23:51:14 +01:00 Successfully validated the token.
+01/30/2021 23:51:14 +01:00 Authorization was successful.
+01/30/2021 23:51:14 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:51:14 +01:00 Route matched with "{action = \"AddOrEdit\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult AddOrEdit(CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel)" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:51:19 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:51:41 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p8='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Soaps] SET [Brand] = @p0, [Description] = @p1, [Edition] = @p2, [LastModified] = @p3, [LastModifiedBy] = @p4, [URL] = @p5, [UnitPrice] = @p6, [UnitQuantity] = @p7
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;"
+01/30/2021 23:51:49 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel"'.
+01/30/2021 23:51:49 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)" in 35064.399ms
+01/30/2021 23:51:49 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:51:49 +01:00 HTTP "POST" "/api/soaps" responded 200 in 35068.7103 ms
+01/30/2021 23:51:49 +01:00 Request finished in 35072.7677ms 200 application/json; charset=utf-8
+01/30/2021 23:51:55 +01:00 Request starting HTTP/1.1 GET https://localhost:44342/api/soaps application/json 347
+01/30/2021 23:51:55 +01:00 Successfully validated the token.
+01/30/2021 23:51:55 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:51:55 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:51:55 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:51:55 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:51:55 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:51:55 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 3.7192ms
+01/30/2021 23:51:55 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:51:55 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.2168 ms
+01/30/2021 23:51:55 +01:00 Request finished in 5.6548ms 200 application/json; charset=utf-8
+01/30/2021 23:52:39 +01:00 Request starting HTTP/1.1 POST https://localhost:44342/api/soaps application/json 352
+01/30/2021 23:52:39 +01:00 Successfully validated the token.
+01/30/2021 23:52:39 +01:00 Authorization was successful.
+01/30/2021 23:52:39 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:52:39 +01:00 Route matched with "{action = \"AddOrEdit\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult AddOrEdit(CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel)" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:52:51 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:52:56 +01:00 Executed DbCommand ("1"ms) [Parameters=["@p8='?' (DbType = Guid), @p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = DateTime2), @p4='?' (Size = 4000), @p5='?' (Size = 4000), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+UPDATE [Soaps] SET [Brand] = @p0, [Description] = @p1, [Edition] = @p2, [LastModified] = @p3, [LastModifiedBy] = @p4, [URL] = @p5, [UnitPrice] = @p6, [UnitQuantity] = @p7
+WHERE [Id] = @p8;
+SELECT @@ROWCOUNT;"
+01/30/2021 23:52:59 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel"'.
+01/30/2021 23:52:59 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)" in 20331.8493ms
+01/30/2021 23:52:59 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.AddOrEdit (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:52:59 +01:00 HTTP "POST" "/api/soaps" responded 200 in 20341.1352 ms
+01/30/2021 23:52:59 +01:00 Request finished in 20342.4681ms 200 application/json; charset=utf-8
+01/30/2021 23:53:11 +01:00 Request starting HTTP/1.1 DELETE https://localhost:44342/api/soaps/e10ee303-ff17-4ef1-46de-08d8c57049de application/json 352
+01/30/2021 23:53:11 +01:00 Successfully validated the token.
+01/30/2021 23:53:11 +01:00 Authorization was successful.
+01/30/2021 23:53:11 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:53:11 +01:00 Route matched with "{action = \"Delete\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Delete(System.Guid)" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:53:11 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:53:11 +01:00 Executed DbCommand ("0"ms) [Parameters=["@__get_Item_0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]
+WHERE [s].[Id] = @__get_Item_0"
+01/30/2021 23:53:24 +01:00 Executed DbCommand ("0"ms) [Parameters=["@p0='?' (DbType = Guid)"], CommandType='Text', CommandTimeout='30']"
+""SET NOCOUNT ON;
+DELETE FROM [Soaps]
+WHERE [Id] = @p0;
+SELECT @@ROWCOUNT;"
+01/30/2021 23:53:26 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapViewModel"'.
+01/30/2021 23:53:26 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete (CleanArchitectureWebAPI.WebAPI)" in 14390.427ms
+01/30/2021 23:53:26 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:53:26 +01:00 HTTP "DELETE" "/api/soaps/e10ee303-ff17-4ef1-46de-08d8c57049de" responded 200 in 14392.2156 ms
+01/30/2021 23:53:26 +01:00 Request finished in 14392.6294ms 200 application/json; charset=utf-8
+01/30/2021 23:53:33 +01:00 Request starting HTTP/1.1 GET https://localhost:44342/api/soaps application/json 352
+01/30/2021 23:53:33 +01:00 Successfully validated the token.
+01/30/2021 23:53:33 +01:00 Executing endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:53:33 +01:00 Route matched with "{action = \"GetAll\", controller = \"Soaps\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult GetAll()" on controller "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController" ("CleanArchitectureWebAPI.WebAPI").
+01/30/2021 23:53:33 +01:00 Entity Framework Core "5.0.0" initialized '"LibraryDbContext"' using provider '"Microsoft.EntityFrameworkCore.SqlServer"' with options: "None"
+01/30/2021 23:53:33 +01:00 Executed DbCommand ("0"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Brand], [s].[Created], [s].[CreatedBy], [s].[Description], [s].[Edition], [s].[LastModified], [s].[LastModifiedBy], [s].[URL], [s].[UnitPrice], [s].[UnitQuantity]
+FROM [Soaps] AS [s]"
+01/30/2021 23:53:33 +01:00 Executing ObjectResult, writing value of type '"CleanArchitectureWebAPI.Application.ViewModels.Soap.SoapListViewModel"'.
+01/30/2021 23:53:33 +01:00 Executed action "CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)" in 2.869ms
+01/30/2021 23:53:33 +01:00 Executed endpoint '"CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.GetAll (CleanArchitectureWebAPI.WebAPI)"'
+01/30/2021 23:53:33 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.1421 ms
+01/30/2021 23:53:33 +01:00 Request finished in 4.6831ms 200 application/json; charset=utf-8

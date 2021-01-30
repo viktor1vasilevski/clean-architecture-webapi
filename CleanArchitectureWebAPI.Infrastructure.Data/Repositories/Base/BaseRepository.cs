@@ -22,14 +22,12 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Repositories.Base
         public T Add(T entity)
         {
             _dbContext.Set<T>().Add(entity);
-            _dbContext.SaveChanges();
             return entity;
         }
 
         public void Delete(T entity)
         {
             _dbContext.Set<T>().Remove(entity);
-            _dbContext.SaveChanges();
         }
 
         public IReadOnlyList<T> GetAll()
@@ -45,6 +43,10 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Repositories.Base
         public void Update(T entity)
         {
             _dbContext.Entry(entity).State = EntityState.Modified;
+        }
+
+        public void SaveChanges()
+        {
             _dbContext.SaveChanges();
         }
     }

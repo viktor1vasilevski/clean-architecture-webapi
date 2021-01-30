@@ -22,6 +22,9 @@ namespace CleanArchitectureWebAPI.Application.Services
         {
             var oil = _mapper.Map<Oil>(oilRequest);
             var addedOil = _oilRepository.Add(oil);
+
+            _oilRepository.SaveChanges();
+
             return _mapper.Map<OilViewModel>(addedOil);
         }
 
@@ -32,6 +35,8 @@ namespace CleanArchitectureWebAPI.Application.Services
             if (oil != null)
             {
                 _oilRepository.Delete(oil);
+                _oilRepository.SaveChanges();
+
                 return true;
             }
             else
@@ -44,6 +49,8 @@ namespace CleanArchitectureWebAPI.Application.Services
         {
             var oil = _mapper.Map<Oil>(oilRequest);
             _oilRepository.Update(oil);
+
+            _oilRepository.SaveChanges();
         }
 
         public OilViewModel GetOilById(Guid id)

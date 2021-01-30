@@ -9,13 +9,17 @@ There are some steps that you have to do, to get working on you computer:
 1.  Change the connection string - In the WebAPI project in the appsettings.json file enter your server name 
     and name of the database(I was working on SQL Server 2014 Management Studio).
 
-2.  Go into the Package Manager Console and type: add-migration !IMPORTANT - Make sure that your WebAPI is Set as Startup Project, 
+2.  Go into the Package Manager Console and type: add-migration 
+    !IMPORTANT - Make sure that your WebAPI is Set as Startup Project, 
     and in the Package Manager Console your Default project is CleanArchitectureWebAPI.Infrastructure.Data selected.
+    
     - this will create folder Migration in CleanArchitectureWebAPI.Infrastructure.Data with the migrations. 
-      Then it will show all the tables in your database that are comming with the IdentityDbContext, plus the models in the Domain folder.
+      This will create the Migration with all the ASP.NET tables and models.
       
 3.  When this is done just type in the Package Manager Console: update-database.
-    - This will create the database with you database name with all the AspNet tables and the models.
+    - This will create the database with you database name with all the ASP.NET Identity tables and the models.
+    - In the WebAPI project it will also be created folder Log with two files. One .json file and other .txt.
+      These are for detail logging information.
     
     Because the API works with roles "Admin" and "User", you have to go first to create roles "Admin" and "User" in dbo.AspNetRoles 
     with some number Id. (because "User" is with Id 2(this is set to be automatically), make "Admin" with Id 1).
@@ -29,7 +33,8 @@ There are some steps that you have to do, to get working on you computer:
       [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")] <<<, below some other Http request).
 
 This WebAPI uses JSON Web Token (JWT) for Authorization and Information Exchange.
-This WebAPI also uses swagger, so you can test it. Just write in the URL insted of {url}/api/soaps, or {url}/api/balms, just write {url}/swagger
+This WebAPI also uses swagger, so you can test it. Just write in the URL insted of {url}/api/soaps, or {url}/api/balms, just write {url}/swagger.
+This WebAPI uses Serilog for activity tracking.
 
 Then just run the project on F5 and this will build the project and it will seed the database with some data, just something to work with. (maybe you have to close the SQL Server 2014 Management Studio and start it again)
 So the project is very useful because it show how to implement Clean Architecture Design, Domain-Driven Design, Separation of Concerns, Basis of OOP, Validation and User Authentication and Authorization, Token, AutoMapper, Inversion Of Control, SOLID Principles and more.

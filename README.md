@@ -35,7 +35,7 @@ There are some steps that you have to do, to get working on you computer:
     VALUES (2, 'User', 'USER', null)
     
 5.  Next step is to register some user.
-    - you can {url}/swagger here just to see what input should you provide to get registered. (you can user Postman or Fiddler)
+    - you can {url}/swagger here, just to see what input should you provide to get registered or to test the api. (you can use Postman or Fiddler for testing and registration)
     - after you get registered, automatically this user will have the role "User". 
        Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB.
        Or write this command in SQL

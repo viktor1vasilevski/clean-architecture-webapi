@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using NSwag.Annotations;
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,12 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
     public class BalmsController : Controller
     {
         private readonly IBalmService _balmService;
-        public BalmsController(IBalmService balmService)
+        private IMemoryCache _memoryCache;
+        private string _allBalmsKey = "All_Balms_Cache";
+        public BalmsController(IBalmService balmService, IMemoryCache memoryCache)
         {
             _balmService = balmService;
+            _memoryCache = memoryCache;
         }
 
         
@@ -29,7 +33,25 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         [SwaggerResponse(HttpStatusCode.NotFound, null, Description = "List Of Balms Is Empty")]
         public IActionResult GetAll()
         {
-            var balmListViewModel = _balmService.GetBalms();
+            BalmListViewModel balmListViewModel;
+
+            // Returns an entry from the cache
+            balmListViewModel = (BalmListViewModel)_memoryCache.Get(_allBalmsKey);
+
+            if (balmListViewModel == null)
+            {
+                // If there is no entry in the cache for that key, go to the database and make a new request
+                balmListViewModel = _balmService.GetBalms();
+                // Setting cache entry for that key. 
+                _memoryCache.Set(_allBalmsKey, balmListViewModel, new MemoryCacheEntryOptions().
+                    SetSlidingExpiration(TimeSpan.FromMinutes(15)).
+                    SetAbsoluteExpiration(TimeSpan.FromHours(1)));
+                // SetSlidingExpiration Sets how long the cache entry can be inactive 
+                // SetAbsoluteExpiration Sets an absolute expiration date for the cache entry
+
+                // THIS IS JUST TO DEMONSTRATE HOW CACHE WORKS. YOU CAN ALLWAYS CHANGE THE TIMESPAN
+            }
+
             if (balmListViewModel != null)
             {
                 return Ok(balmListViewModel);
@@ -77,6 +99,9 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             {
                 _balmService.EditBalm(model);
             }
+
+            _memoryCache.Remove(_allBalmsKey);
+
             return Ok(model);
         }
 
@@ -93,6 +118,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             _balmService.DeleteBalm(id);
             if (balm != null)
             {
+                _memoryCache.Remove(_allBalmsKey);
                 return Ok(balm);
             }
             else

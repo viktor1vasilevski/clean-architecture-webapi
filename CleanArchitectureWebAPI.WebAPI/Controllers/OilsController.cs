@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using NSwag.Annotations;
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,12 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
     public class OilsController : Controller
     {
         private readonly IOilService _oilService;
-        public OilsController(IOilService oilService)
+        private IMemoryCache _memoryCache;
+        private string _allOilsKey = "All_Oils_Cache";
+        public OilsController(IOilService oilService, IMemoryCache memoryCache)
         {
             _oilService = oilService;
+            _memoryCache = memoryCache;
         }
 
 
@@ -30,7 +34,17 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         [SwaggerResponse(HttpStatusCode.NotFound, null, Description = "List Of Oils Is Empty")]
         public IActionResult GetAll()
         {
-            var oilListViewModel = _oilService.GetOils();
+            OilListViewModel oilListViewModel;
+            oilListViewModel = (OilListViewModel)_memoryCache.Get(_allOilsKey);
+
+            if (oilListViewModel == null)
+            {
+                oilListViewModel = _oilService.GetOils();
+
+                _memoryCache.Set(_allOilsKey, oilListViewModel, new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(15))
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(1)));
+            }
             if (oilListViewModel != null)
             {
                 return Ok(oilListViewModel);
@@ -76,6 +90,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             {
                 _oilService.EditOil(model);
             }
+            _memoryCache.Remove(_allOilsKey);
             return Ok(model);
         }
 
@@ -91,6 +106,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             _oilService.DeleteOil(id);
             if (oil != null)
             {
+                _memoryCache.Remove(_allOilsKey);
                 return Ok(oil);
             }
             else

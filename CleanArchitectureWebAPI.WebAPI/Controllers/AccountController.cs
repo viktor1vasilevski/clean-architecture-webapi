@@ -16,7 +16,7 @@ using System.Threading.Tasks;
 
 namespace CleanArchitectureWebAPI.WebAPI.Controllers
 {
-    [Route("[controller]")]
+    [Route("api/[controller]")]
     [ApiController]
     [AllowAnonymous]
     public class AccountController : Controller

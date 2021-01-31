@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 using NSwag.Annotations;
 using System;
 using System.Collections.Generic;
@@ -18,9 +19,12 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
     public class SoapsController : Controller
     {
         private readonly ISoapService _soapService;
-        public SoapsController(ISoapService soapService)
+        private string _allSoapsKey = "All_Soaps_Cache";
+        private IMemoryCache _memoryCache;
+        public SoapsController(ISoapService soapService, IMemoryCache memoryCache)
         {
             _soapService = soapService;
+            _memoryCache = memoryCache;
         }
 
         [HttpGet] //URL/api/soaps  http metod Get
@@ -28,7 +32,18 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         [SwaggerResponse(HttpStatusCode.NotFound, null, Description = "List Of Soaps Is Empty")]
         public IActionResult GetAll()
         {
-            var soapListViewModel = _soapService.GetSoaps();
+            SoapListViewModel soapListViewModel;
+            soapListViewModel = (SoapListViewModel)_memoryCache.Get(_allSoapsKey);
+
+            if (soapListViewModel == null)
+            {
+                soapListViewModel = _soapService.GetSoaps();
+                
+                _memoryCache.Set(_allSoapsKey, soapListViewModel, new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(15))
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(1)));
+            }
+
             if (soapListViewModel != null)
             {
                 return Ok(soapListViewModel);
@@ -75,6 +90,9 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             {
                 _soapService.EditSoap(model);
             }
+            // Removes the specified item from the cache because we have new added or updated model
+            _memoryCache.Remove(_allSoapsKey);
+
             return Ok(model);
         }
 
@@ -89,6 +107,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             _soapService.DeleteSoap(id);
             if (soap != null)
             {
+                _memoryCache.Remove(_allSoapsKey);
                 return Ok(soap);
             }
             else

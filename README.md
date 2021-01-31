@@ -60,4 +60,4 @@ Also this project is Domain-Driven, it keeps Separation of Concerns, here are th
 I like to mention one tiny mestake - the name Domian is wrong. It should be Domain, not Domian.
 At the very end I notice that mestake when everything was done. So I hope it doesn't bother anyone.
 
-# Tuka sme
+

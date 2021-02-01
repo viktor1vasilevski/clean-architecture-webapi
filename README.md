@@ -35,7 +35,7 @@ There are some steps that you have to do, to get working on you computer:
     VALUES (2, 'User', 'USER', null)
     
 5.  Next step is to register some user.
-    - you can {url}/swagger here just to see what input should you provide to get registered. (you can user Postman or Fiddler)
+    - you can {url}/swagger here, just to see what input should you provide to get registered or to test the api. (you can use Postman or Fiddler for testing and registration)
     - after you get registered, automatically this user will have the role "User". 
        Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB.
        Or write this command in SQL
@@ -47,14 +47,17 @@ There are some steps that you have to do, to get working on you computer:
     
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this:
-      [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")] <<<, below some other Http request).
+      [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")] , below some other Http request).
 
 This WebAPI uses JSON Web Token (JWT) for Authorization and Information Exchange.
 This WebAPI also uses swagger, so you can test it. Just write in the URL insted of {url}/api/soaps, or {url}/api/balms, just write {url}/swagger.
 This WebAPI uses Serilog for activity tracking.
 
 
-This project is very useful because it show how to implement Clean Architecture Design, Domain-Driven Design, Separation of Concerns, the Basis of OOP, Validation and User Authentication and Authorization, Token, AutoMapper, Inversion Of Control, SOLID Principles and more.
+This project is very useful because it show how to implement SOLID Principles with Clean Architecture Design.
+Also this project is Domain-Driven, it keeps Separation of Concerns, here are the Basis of OOP, Validation and User Authentication and Authorization, using Token, AutoMapper, implementing Inversion Of Control, using Serilog for diagnostic logging, In Memory Caching and more.
 
 I like to mention one tiny mestake - the name Domian is wrong. It should be Domain, not Domian.
 At the very end I notice that mestake when everything was done. So I hope it doesn't bother anyone.
+
+

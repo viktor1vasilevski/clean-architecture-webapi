@@ -35,8 +35,10 @@ namespace CleanArchitectureWebAPI.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // using cache
-            //services.AddResponseCaching();
+            // Setting Response Caching
+            services.AddResponseCaching();
+
+            // Setting In Memory Cache
             services.AddMemoryCache();
 
             services.AddControllers();
@@ -98,7 +100,8 @@ namespace CleanArchitectureWebAPI.WebAPI
 
             app.UseHttpsRedirection();
 
-            //app.UseResponseCaching();
+            // Using the Response Caching
+            app.UseResponseCaching();
 
             // Request Logging middleware
             app.UseSerilogRequestLogging();

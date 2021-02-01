@@ -96,6 +96,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
 
         
         [HttpDelete("{id}")] //URL/api/oils/id  http metod Delete
+        [ResponseCache(Duration = 300, VaryByQueryKeys = new string[] { "id" })]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
         [SwaggerResponse(HttpStatusCode.OK, typeof(OilViewModel), Description = "Successfully Deleted Oil Model")]
         [SwaggerResponse(HttpStatusCode.NotFound, typeof(Guid), Description = "Oil Model You Want To Delete Doesn't Exist")]

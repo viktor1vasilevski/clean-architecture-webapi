@@ -1054,3 +1054,317 @@ FROM [Balms] AS [b]"
 02/01/2021 17:07:13 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 5.2957 ms
 02/01/2021 17:07:46 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4405.6260 ms
 02/01/2021 17:07:53 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 3828.2281 ms
+02/01/2021 17:18:32 +01:00 Application is starting
+02/01/2021 17:18:35 +01:00 HTTP "GET" "/api/soaps" responded 200 in 363.5643 ms
+02/01/2021 17:18:36 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 5.4794 ms
+02/01/2021 17:19:30 +01:00 HTTP "GET" "/api/soaps" responded 200 in 23.3422 ms
+02/01/2021 17:20:02 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 155.7893 ms
+02/01/2021 17:20:17 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 5741.1358 ms
+02/01/2021 17:20:32 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 9847.0412 ms
+02/01/2021 17:20:57 +01:00 Application is starting
+02/01/2021 17:21:00 +01:00 HTTP "GET" "/api/soaps" responded 200 in 336.1947 ms
+02/01/2021 17:21:00 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.9010 ms
+02/01/2021 17:21:05 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+02/01/2021 17:21:05 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500 in 176.3631 ms
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+02/01/2021 17:21:05 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+02/01/2021 17:21:18 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.9077 ms
+02/01/2021 17:21:39 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+02/01/2021 17:21:39 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500 in 50.3862 ms
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+02/01/2021 17:21:39 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+02/01/2021 17:23:24 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+02/01/2021 17:23:24 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500 in 43.1899 ms
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+02/01/2021 17:23:24 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+02/01/2021 17:23:40 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+02/01/2021 17:23:40 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500 in 36.1982 ms
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+02/01/2021 17:23:40 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+02/01/2021 17:23:46 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+02/01/2021 17:23:46 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 500 in 162.9250 ms
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+02/01/2021 17:23:46 +01:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: 'VaryByQueryKeys' requires the response cache middleware.
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilterExecutor.Execute(FilterContext context)
+   at Microsoft.AspNetCore.Mvc.Filters.ResponseCacheFilter.OnActionExecuting(ActionExecutingContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\Users\VG\source\repos\CleanArchitectureWebAPI\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+02/01/2021 17:26:07 +01:00 Application is starting
+02/01/2021 17:26:10 +01:00 HTTP "GET" "/api/soaps" responded 200 in 376.0506 ms
+02/01/2021 17:26:10 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.0813 ms
+02/01/2021 17:26:25 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4557.1278 ms
+02/01/2021 17:26:30 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 3731.7499 ms
+02/01/2021 17:27:20 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4607.4557 ms
+02/01/2021 17:27:45 +01:00 HTTP "GET" "/api/soaps/" responded 200 in 3.3142 ms
+02/01/2021 17:28:07 +01:00 HTTP "GET" "/api/soaps/704f6a5b-7f73-4fd8-8b3d-08d8c63dde85" responded 200 in 4129.3973 ms
+02/01/2021 17:29:39 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4229.6617 ms
+02/01/2021 17:31:19 +01:00 Application is starting
+02/01/2021 17:31:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 578.5228 ms
+02/01/2021 17:31:22 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 5.0377 ms
+02/01/2021 17:31:34 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 3860.7894 ms
+02/01/2021 17:38:40 +01:00 Application is starting
+02/01/2021 17:38:42 +01:00 HTTP "GET" "/api/soaps" responded 200 in 334.1238 ms
+02/01/2021 17:38:42 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.0432 ms
+02/01/2021 17:38:48 +01:00 HTTP "GET" "/api/soaps/" responded 200 in 150.1369 ms
+02/01/2021 17:39:02 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 6808.8724 ms
+02/01/2021 17:39:13 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 9068.1540 ms
+02/01/2021 17:39:22 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 6266.4731 ms
+02/01/2021 17:39:35 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 5195.0714 ms
+02/01/2021 17:40:53 +01:00 Application is starting
+02/01/2021 17:40:56 +01:00 HTTP "GET" "/api/soaps" responded 200 in 334.7031 ms
+02/01/2021 17:40:56 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.7775 ms
+02/01/2021 17:41:08 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 5476.5637 ms
+02/01/2021 17:41:37 +01:00 HTTP "GET" "/api/soaps/704f6a5b-7f73-4fd8-8b3d-08d8c63dde85" responded 200 in 4567.3466 ms
+02/01/2021 17:42:12 +01:00 Application is starting
+02/01/2021 17:42:14 +01:00 HTTP "GET" "/api/soaps" responded 200 in 374.7962 ms
+02/01/2021 17:42:15 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.4589 ms
+02/01/2021 17:42:17 +01:00 HTTP "GET" "/api/soaps" responded 200 in 129.0266 ms
+02/01/2021 17:42:40 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4608.4101 ms
+02/01/2021 17:43:03 +01:00 HTTP "GET" "/api/soaps/704f6a5b-7f73-4fd8-8b3d-08d8c63dde85" responded 200 in 3281.6954 ms
+02/01/2021 17:43:47 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 6441.5302 ms

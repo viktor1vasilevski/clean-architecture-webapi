@@ -994,3 +994,63 @@ FROM [Balms] AS [b]"
 02/01/2021 00:29:57 +01:00 Executed DbCommand ("1"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
 ""SELECT [b].[Id], [b].[Brand], [b].[Created], [b].[CreatedBy], [b].[Description], [b].[LastModified], [b].[LastModifiedBy], [b].[URL], [b].[UnitPrice], [b].[UnitQuantity], [b].[Volume]
 FROM [Balms] AS [b]"
+02/01/2021 16:24:40 +01:00 Application is starting
+02/01/2021 16:24:43 +01:00 HTTP "GET" "/api/soaps" responded 200 in 370.1250 ms
+02/01/2021 16:24:44 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.6098 ms
+02/01/2021 16:25:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 152.8868 ms
+02/01/2021 16:25:23 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.0061 ms
+02/01/2021 16:25:49 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7170.5185 ms
+02/01/2021 16:26:16 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 7723.3149 ms
+02/01/2021 16:26:31 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 10080.9391 ms
+02/01/2021 16:26:46 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 10471.7618 ms
+02/01/2021 16:27:07 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 11057.2385 ms
+02/01/2021 16:27:50 +01:00 Application is starting
+02/01/2021 16:27:58 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5707.1631 ms
+02/01/2021 16:28:14 +01:00 Application is starting
+02/01/2021 16:28:17 +01:00 HTTP "GET" "/api/soaps" responded 200 in 367.1439 ms
+02/01/2021 16:28:17 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 5.4543 ms
+02/01/2021 16:28:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.9347 ms
+02/01/2021 16:28:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.9601 ms
+02/01/2021 16:28:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.1027 ms
+02/01/2021 16:28:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.2773 ms
+02/01/2021 16:28:35 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 7417.5596 ms
+02/01/2021 16:28:48 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 10422.2490 ms
+02/01/2021 16:50:39 +01:00 Application is starting
+02/01/2021 16:50:41 +01:00 HTTP "GET" "/api/soaps" responded 200 in 332.1965 ms
+02/01/2021 16:50:42 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.0610 ms
+02/01/2021 16:50:59 +01:00 HTTP "GET" "/api/soaps" responded 200 in 124.2683 ms
+02/01/2021 16:51:21 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 6903.3315 ms
+02/01/2021 16:51:29 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 5555.9126 ms
+02/01/2021 16:51:36 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4391.0616 ms
+02/01/2021 16:57:32 +01:00 Application is starting
+02/01/2021 16:57:35 +01:00 HTTP "GET" "/api/soaps" responded 200 in 359.5026 ms
+02/01/2021 16:57:35 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 6.0637 ms
+02/01/2021 16:57:38 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.1122 ms
+02/01/2021 16:57:38 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.0615 ms
+02/01/2021 16:57:48 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 5397.3054 ms
+02/01/2021 16:57:56 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 5524.4065 ms
+02/01/2021 16:58:21 +01:00 HTTP "GET" "/api/soaps/?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 7.9830 ms
+02/01/2021 16:58:30 +01:00 HTTP "GET" "/api/soaps?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4.1384 ms
+02/01/2021 16:59:09 +01:00 HTTP "GET" "/api/soaps?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 10.8665 ms
+02/01/2021 16:59:10 +01:00 HTTP "GET" "/api/soaps?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 3.4013 ms
+02/01/2021 16:59:10 +01:00 HTTP "GET" "/api/soaps?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 3.6170 ms
+02/01/2021 16:59:21 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 3983.3210 ms
+02/01/2021 17:02:19 +01:00 HTTP "GET" "/api/soaps/getbyid?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 400 in 17.3408 ms
+02/01/2021 17:03:14 +01:00 Application is starting
+02/01/2021 17:03:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 331.9627 ms
+02/01/2021 17:03:16 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 3.9961 ms
+02/01/2021 17:03:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.6059 ms
+02/01/2021 17:03:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.6057 ms
+02/01/2021 17:03:26 +01:00 HTTP "GET" "/api/soaps/getbyid?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 400 in 152.2975 ms
+02/01/2021 17:03:31 +01:00 HTTP "GET" "/api/soaps/" responded 200 in 5.0857 ms
+02/01/2021 17:04:00 +01:00 HTTP "GET" "/api/soaps/getbyid?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 400 in 5.9346 ms
+02/01/2021 17:04:11 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4422.7883 ms
+02/01/2021 17:04:20 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 6364.9148 ms
+02/01/2021 17:04:32 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4301.6183 ms
+02/01/2021 17:04:39 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4015.2911 ms
+02/01/2021 17:05:04 +01:00 HTTP "GET" "/api/soaps/getbyid?id=55a0b49c-99cc-4501-46dd-08d8c57049de" responded 400 in 7.4702 ms
+02/01/2021 17:07:10 +01:00 Application is starting
+02/01/2021 17:07:13 +01:00 HTTP "GET" "/api/soaps" responded 200 in 350.2573 ms
+02/01/2021 17:07:13 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 5.2957 ms
+02/01/2021 17:07:46 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 4405.6260 ms
+02/01/2021 17:07:53 +01:00 HTTP "GET" "/api/soaps/55a0b49c-99cc-4501-46dd-08d8c57049de" responded 200 in 3828.2281 ms

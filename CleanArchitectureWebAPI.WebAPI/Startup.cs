@@ -98,6 +98,8 @@ namespace CleanArchitectureWebAPI.WebAPI
 
             app.UseHttpsRedirection();
 
+            //app.UseResponseCaching();
+
             // Request Logging middleware
             app.UseSerilogRequestLogging();
 

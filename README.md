@@ -1,5 +1,6 @@
 # Clean-Architecture-WebAPI
 
+...currently working on testing the api, so very soon the project will be complete!
 
 This is a WebAPI, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
 You can add your own models, validations, etc, and you can actually create MVC project on top of it, or just 

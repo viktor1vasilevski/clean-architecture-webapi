@@ -1,6 +1,7 @@
 # Clean Architecture ASP.NET WebAPI Core 3.1
 
 ## Project Use Case
+### TTrr
 
 This is a WebAPI, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
 You can add your own models, validations, etc. You can also create MVC project on top of it, or just 
@@ -74,4 +75,4 @@ use it as a api, deployed locally or publish on some server and use some front-e
 2. The enitiies don't have foreign keys or any common table
 
 ## Notes
-1. The solution folder Domian, should be Domain. And also the Class Library should be CleanArchitectureWebAPI.Domain, not CleanArchitectureWebAPI.Domian.
+1. The solution folder Domian, should be named Domain. And also the name of the Class Library from that folder should be named CleanArchitectureWebAPI.Domain, not CleanArchitectureWebAPI.Domian.

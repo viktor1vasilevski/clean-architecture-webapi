@@ -25,6 +25,7 @@ namespace CleanArchitectureWebAPI.WebAPI
 {
     public class Startup
     {
+        // tuka e Dipe
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;

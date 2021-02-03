@@ -1,7 +1,6 @@
 # Clean Architecture ASP.NET WebAPI Core 3.1
 
 ## Project Use Case
-### TTrr
 
 This is a WebAPI, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
 You can add your own models, validations, etc. You can also create MVC project on top of it, or just 

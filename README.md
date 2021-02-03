@@ -1,14 +1,12 @@
-# Clean-Architecture-WebAPI
+# Clean Architecture WebAPI
 
-## Viktor
-
-...currently working on testing the api, so very soon the project will be complete!
+## Project Use Case
 
 This is a WebAPI, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
 You can add your own models, validations, etc, and you can actually create MVC project on top of it, or just 
 use it as a api, deployed locally or publish on some server and use some front-end framework to show the data.
 
-There are some steps that you have to do, to get working on you computer:
+## Installation
 
 1.  Change the connection string - In the WebAPI project in the appsettings.json file enter your server name 
     and name of the database(I was working on SQL Server 2014 Management Studio).

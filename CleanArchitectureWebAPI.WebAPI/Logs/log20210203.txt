@@ -2,3 +2,8 @@
 02/03/2021 01:02:33 +01:00 HTTP "GET" "/api/soaps" responded 200 in 364.3196 ms
 02/03/2021 01:02:33 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 4.2662 ms
 02/03/2021 01:57:08 +01:00 Application is starting
+02/03/2021 02:50:58 +01:00 Application is starting
+02/03/2021 02:51:04 +01:00 HTTP "GET" "/api/soaps" responded 200 in 468.1470 ms
+02/03/2021 02:51:04 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 7.9161 ms
+02/03/2021 02:51:08 +01:00 HTTP "GET" "/api/oils" responded 200 in 65.8625 ms
+02/03/2021 02:51:13 +01:00 HTTP "GET" "/api/balms" responded 200 in 50.5151 ms

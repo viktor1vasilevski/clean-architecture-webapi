@@ -54,11 +54,20 @@ This WebAPI uses JSON Web Token (JWT) for Authorization and Information Exchange
 This WebAPI also uses swagger, so you can test it. Just write in the URL insted of {url}/api/soaps, or {url}/api/balms, just write {url}/swagger.
 This WebAPI uses Serilog for activity tracking.
 
+## Principle, Patterns and external libraries used.
 
-This project is very useful because it show how to implement SOLID Principles with Clean Architecture Design.
-Also this project is Domain-Driven, it keeps Separation of Concerns, here are the Basis of OOP, uses Validation and User Authentication and Authorization, Token, AutoMapper, implementing Inversion Of Control, uses Serilog for diagnostic logging, In Memory Caching and more.
+1. Clean (Onion) project architecture with Domain Driven Design aand SOLID principles.
+2. ASP.NET Core Dependency Injection
+3. Repository Pattern
+4. Automapper
+5. Logging with Serilog
 
-I like to mention one tiny mestake - the name Domian is wrong. It should be Domain, not Domian.
-At the very end I notice that mestake when everything was done. So I hope it doesn't bother anyone.
+
+## ToDO
+
+1. Unit Testing
+2. Repository pattern with Unit of Work
+3. Data anotations and model validation
+4. Better handling of the business logic, since this is only a concept.
 
 

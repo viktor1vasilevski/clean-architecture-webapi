@@ -48,13 +48,9 @@ use it as a api, deployed locally or publish on some server and use some front-e
     (in the project there is no request that is authorized by "User", so you can use this:
       [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")] , below some other Http request).
 
-This WebAPI uses JSON Web Token (JWT) for Authorization and Information Exchange.
-This WebAPI also uses swagger, so you can test it. Just write in the URL insted of {url}/api/soaps, or {url}/api/balms, just write {url}/swagger.
-This WebAPI uses Serilog for activity tracking.
-
 ## Principle, Patterns and external libraries used.
 
-1. Clean (Onion) project architecture with Domain Driven Design aand SOLID principles.
+1. Clean (Onion) project architecture with Domain Driven Design and SOLID principles.
 2. ASP.NET Core Dependency Injection
 3. Repository Pattern
 4. Automapper
@@ -62,7 +58,7 @@ This WebAPI uses Serilog for activity tracking.
 6. In Memory Caching
 7. Response Caching
 8. Swagger
-9. JWT Token 
+9. JWT Token Authorization and Information Exchange
 
 ## ToDO
 

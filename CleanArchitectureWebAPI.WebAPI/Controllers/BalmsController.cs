@@ -38,9 +38,9 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             // Returns an entry from the cache
             balmListViewModel = (BalmListViewModel)_memoryCache.Get(_allBalmsKey);
 
+            // If there is no entry in the cache for that key, go to database
             if (balmListViewModel == null)
             {
-                // If there is no entry in the cache for that key, go to the database and make a new request
                 balmListViewModel = _balmService.GetBalms();
                 // Setting cache entry for that key. 
                 _memoryCache.Set(_allBalmsKey, balmListViewModel, new MemoryCacheEntryOptions().

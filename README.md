@@ -72,3 +72,6 @@ use it as a api, deployed locally or publish on some server and use some front-e
 
 1. There is no business logic, since this is only a concept.
 2. The enitiies don't have foreign keys or any common table
+
+## Notes
+1. The solution folder Domian, should be Domain. And also do Class Library should be CleanArchitectureWebAPI.Domain, not CleanArchitectureWebAPI.Domian

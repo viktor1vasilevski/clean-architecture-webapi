@@ -59,6 +59,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
 7. Response Caching
 8. Swagger
 9. JWT Token Authorization and Information Exchange
+10. Unit Testing
 
 ## ToDO
 

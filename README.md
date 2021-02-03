@@ -8,7 +8,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
 
 ## Installation
 
-1.  Download the code(Clone the repository or download as a zip file)
+1.  Download the code - Clone the repository or download the zip file
 
 2.  Change the connection string - In the WebAPI project in the appsettings.json file enter your server name 
     and name of the database(I was working on SQL Server 2014 Management Studio).
@@ -38,16 +38,18 @@ use it as a api, deployed locally or publish on some server and use some front-e
     INSERT INTO dbo.AspNetRoles(Id, Name, NormalizedName, ConcurrencyStamp)
     VALUES (2, 'User', 'USER', null)
     
-7.  Next step is to register some user.
-    - you can {url}/swagger here, just to see what input should you provide to get registered. (you can use Postman or Fiddler for registration)
-    - after you get registered, automatically this user will have the role "User". 
+7.  Next step is to register some user
+    - you can {url}/swagger here, just to see what input should you provide to get registered. (you can use Postman or Fiddler for registration, or some other program)
+    - after you get registered, automatically, this user will have the role "User". 
        Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB.
        Or write this command in SQL
        
+       USE {yourDatabaseName}
+       GO
        UPDATE [dbo].[AspNetUserRoles] SET RoleId = 1 
        WHERE UserId = '{userId}'
        
-       This user, from then on will be with the role of "Admin". 
+       This user, from then on will be with role of "Admin". 
     
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this:

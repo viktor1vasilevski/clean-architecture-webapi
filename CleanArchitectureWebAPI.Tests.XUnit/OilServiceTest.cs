@@ -5,6 +5,7 @@ using CleanArchitectureWebAPI.Domian.Interfaces;
 using CleanArchitectureWebAPI.Domian.Models;
 using FluentAssertions;
 using Moq;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -41,7 +42,8 @@ namespace CleanArchitectureWebAPI.Tests.XUnit
             var result = oilService.GetOils();
 
             // assert
-            Assert.IsType<OilListViewModel>(result);
+            //Assert.IsType<OilListViewModel>(result);
+            result.Should().BeOfType(typeof(OilListViewModel));
         }
 
         [Fact]
@@ -60,7 +62,7 @@ namespace CleanArchitectureWebAPI.Tests.XUnit
         }
 
         [Fact]
-        public void GetOilById_ExistingOil_ShouldReturnOil()
+        public void GetOilById_ExistingOil_ShouldReturnOilViewModel()
         {
             // arrange
             var mockOilRepository = new Mock<IOilRepository>();
@@ -89,7 +91,7 @@ namespace CleanArchitectureWebAPI.Tests.XUnit
             var result = oilService.GetOilById(Guid.NewGuid());
 
             // assert
-            result.Should().NotBeNull();
+            result.Should().BeOfType<OilViewModel>();
         }
 
 

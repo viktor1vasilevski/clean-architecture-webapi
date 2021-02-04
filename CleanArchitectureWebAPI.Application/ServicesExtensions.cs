@@ -11,7 +11,7 @@ namespace CleanArchitectureWebAPI.Application
     {
         public static void AddApplicationLayer(this IServiceCollection services)
         {
-            // With this we say to the services, use the AutoMapper
+            // Setting AutoMapper
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
             // we can add other services here

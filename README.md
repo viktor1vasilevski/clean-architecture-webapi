@@ -15,7 +15,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
 
 3.  Go into the Package Manager Console and type: add-migration "{some name of the migration}"
       #### !IMPORTANT - Make sure that your WebAPI is Set as Startup Project, and in the Package Manager Console your Default project is                             CleanArchitectureWebAPI.Infrastructure.Data selected.
-    - this will create folder Migration in CleanArchitectureWebAPI.Infrastructure.Data with the migrations. 
+    - this will create folder Migrations in CleanArchitectureWebAPI.Infrastructure.Data with the migration. 
       
 4.  When this is done, just type in the Package Manager Console: update-database.
     - this will create the database with you database name with all the ASP.NET Identity tables and the models.
@@ -40,8 +40,9 @@ use it as a api, deployed locally or publish on some server and use some front-e
 7.  Next step is to register some user
     - you can {url}/swagger here, just to see what input should you provide to get registered. (you can use Postman or Fiddler for registration, or some other program)
     - after you get registered, automatically, this user will have the role "User". 
-       Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. Just change it manually to 1 and press TAB.
-       Or write this command in SQL
+       Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. 
+       Just edit the table and change it manually to 1 and press TAB,
+       or write this command in SQL
        
        USE {yourDatabaseName}
        GO

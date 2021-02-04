@@ -38,7 +38,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     VALUES (2, 'User', 'USER', null)
     
 7.  Next step is to register some user
-    - you can {url}/swagger here, just to see what input should you provide to get registered. (you can use Postman or Fiddler for registration, or some other program)
+    - you can use swagger here, just to see what input should you provide to get registered. (you can use Postman or Fiddler for registration, or some other program)
     - after you get registered, automatically, this user will have the role "User". 
        Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. 
        Just edit the table and change it manually to 1 and press TAB,

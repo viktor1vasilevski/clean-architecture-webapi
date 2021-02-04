@@ -1,4 +1,5 @@
 using CleanArchitectureWebAPI.Application;
+using CleanArchitectureWebAPI.Infrastructure.Data;
 using CleanArchitectureWebAPI.Infrastructure.Data.Context;
 using CleanArchitectureWebAPI.Infrastructure.IoC;
 using CleanArchitectureWebAPI.WebAPI.Middlewares;
@@ -50,35 +51,15 @@ namespace CleanArchitectureWebAPI.WebAPI
                        .AllowAnyHeader();
             }));
 
-            // this is where we register the context in our database
+            // This is where we register the context in our database
             services.AddDbContext<LibraryDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
 
-
-            // Setting Identity
-            services.AddIdentity<IdentityUser, IdentityRole>()
-                .AddEntityFrameworkStores<LibraryDbContext>()
-                .AddDefaultTokenProviders();
+            // Registering the Identity Infrastructure
+            services.AddIdentityInfrastructure();
 
             // Registering Inversion Of Control
             services.AddIoCService();
-
-            // Setting JWT Token
-            var singingKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("this-is-my-secret-key"));
-            var tokenValidationParameters = new TokenValidationParameters()
-            {
-                IssuerSigningKey = singingKey,
-                ValidateIssuer = false,
-                ValidateAudience = false,
-                ValidateLifetime = true,
-                ClockSkew = TimeSpan.Zero
-            };
-            services.AddAuthentication(x => x.DefaultAuthenticateScheme = JwtBearerDefaults
-                    .AuthenticationScheme)
-                    .AddJwtBearer(jwt =>
-                    {
-                        jwt.TokenValidationParameters = tokenValidationParameters;
-                    });
 
             // Registering the swagger
             services.AddSwaggerDocument();

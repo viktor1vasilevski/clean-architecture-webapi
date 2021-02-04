@@ -8,8 +8,8 @@ namespace CleanArchitectureWebAPI.Application.ViewModels.Base
     public class BaseViewModel
     {
         /*
-        This is the base view model that you will be using throughout the app,
-        so here you can use Data Annotations like [Required] or [MaxLength(20)]
+        This is the base view model, so here you can use 
+        Data Annotations like [Required] or [MaxLength(20)]
         */
         public Guid Id { get; set; }
         public string Brand { get; set; }

@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
 {
      public class LibraryDbContextSeed
-        {
+     {
         public static async Task SeedAsync(LibraryDbContext libraryDbContext, ILoggerFactory loggerFactory, int? retry = 0)
         {
             int retryForAvailability = retry.Value;

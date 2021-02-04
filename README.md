@@ -14,7 +14,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     and name of the database(I was working on SQL Server 2014 Management Studio).
 
 3.  Go into the Package Manager Console and type: add-migration 
-      ### !IMPORTANT - Make sure that your WebAPI is Set as Startup Project, 
+      #### !IMPORTANT - Make sure that your WebAPI is Set as Startup Project, 
       and in the Package Manager Console your Default project is CleanArchitectureWebAPI.Infrastructure.Data selected.
     - this will create folder Migration in CleanArchitectureWebAPI.Infrastructure.Data with the migrations. 
       

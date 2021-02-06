@@ -59,7 +59,6 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         [HttpGet("{id}")] //URL/api/oils/id   http metod Get
         [SwaggerResponse(HttpStatusCode.OK, typeof(OilViewModel), Description = "Successfully Returned Oil Model")]
         [SwaggerResponse(HttpStatusCode.NotFound, null, Description = "There Is No Oil Model With That Id")]
-        [SwaggerResponse(HttpStatusCode.BadRequest, null, Description = "The Id Is Not In The Correct Format")]
         public IActionResult GetById(Guid id)
         {
             var oil = _oilService.GetOilById(id);

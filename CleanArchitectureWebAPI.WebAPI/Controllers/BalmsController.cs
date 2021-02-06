@@ -66,7 +66,6 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         [HttpGet("{id}")] //URL/api/balms/id  http metod Get
         [SwaggerResponse(HttpStatusCode.OK, typeof(BalmViewModel), Description = "Successfully Returned Balm Model")]
         [SwaggerResponse(HttpStatusCode.NotFound, null, Description = "There Is No Balm Model With That Id")]
-        [SwaggerResponse(HttpStatusCode.BadRequest, null, Description = "The Id Is Not In The Correct Format")]
         [ResponseCache(Duration = 300, VaryByQueryKeys = new string[] { "id" })] // This is the Response Cache
         public IActionResult GetById(Guid id)
         {

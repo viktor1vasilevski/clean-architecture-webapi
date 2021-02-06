@@ -60,7 +60,6 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         [ResponseCache(Duration = 300, VaryByQueryKeys = new string[] { "id" })]
         [SwaggerResponse(HttpStatusCode.OK, typeof(SoapViewModel), Description = "Successfully Returned Soap Model")]
         [SwaggerResponse(HttpStatusCode.NotFound, null, Description = "There Is No Soap Model With That Id")]
-        [SwaggerResponse(HttpStatusCode.BadRequest, null, Description = "The Id Is Not In The Correct Format")]
         public IActionResult GetById(Guid id)
         {
             var soap = _soapService.GetSoapById(id);

@@ -70,7 +70,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             }
             else
             {
-                return NotFound();
+                return NotFound(id);
             }
         }
 
@@ -114,7 +114,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
             }
             else
             {
-                return NotFound();
+                return NotFound(id);
             }
         }
 

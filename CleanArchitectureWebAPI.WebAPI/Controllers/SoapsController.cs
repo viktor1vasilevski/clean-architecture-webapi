@@ -105,9 +105,10 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         public IActionResult Delete(Guid id)
         {
             var soap = _soapService.GetSoapById(id);
-            _soapService.DeleteSoap(id);
+            
             if (soap != null)
             {
+                _soapService.DeleteSoap(id);
                 _memoryCache.Remove(_allSoapsKey);
                 return Ok(soap);
             }

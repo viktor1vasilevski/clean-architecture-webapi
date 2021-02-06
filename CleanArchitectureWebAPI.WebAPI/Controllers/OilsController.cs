@@ -104,9 +104,10 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         public IActionResult Delete(Guid id)
         {
             var oil = _oilService.GetOilById(id);
-            _oilService.DeleteOil(id);
+            
             if (oil != null)
             {
+                _oilService.DeleteOil(id);
                 _memoryCache.Remove(_allOilsKey);
                 return Ok(oil);
             }

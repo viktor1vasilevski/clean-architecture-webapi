@@ -116,9 +116,9 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         public IActionResult Delete(Guid id)
         {
             var balm = _balmService.GetBalmById(id);
-            _balmService.DeleteBalm(id);
             if (balm != null)
             {
+                _balmService.DeleteBalm(id);
                 _memoryCache.Remove(_allBalmsKey);
                 return Ok(balm);
             }

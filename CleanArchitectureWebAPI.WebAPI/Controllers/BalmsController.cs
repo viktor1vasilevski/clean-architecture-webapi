@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 namespace CleanArchitectureWebAPI.WebAPI.Controllers
 {
     [Route("api/[controller]")]
+    [OpenApiTag("Balms", Description = "Methods to work with Balms")]
     [ApiController]
     public class BalmsController : Controller
     {

@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 namespace CleanArchitectureWebAPI.WebAPI.Controllers
 {
     [Route("api/[controller]")]
+    [OpenApiTag("Account", Description = "Methods to work with Account")]
     [ApiController]
     [AllowAnonymous]
     public class AccountController : Controller

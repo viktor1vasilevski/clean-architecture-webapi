@@ -60,13 +60,14 @@ use it as a api, deployed locally or publish on some server and use some front-e
 1. Clean (Onion) project architecture with Domain Driven Design and SOLID principles.
 2. ASP.NET Core Dependency Injection
 3. Repository Pattern
-4. Automapper
-5. Logging with Serilog
-6. In Memory Caching
-7. Response Caching
-8. Swagger
-9. JWT Token
-10. Unit Testing with Moq
+4. Unit Of Work Pattern
+5. Automapper
+6. Logging with Serilog
+7. In Memory Caching
+8. Response Caching
+9. Swagger
+10. JWT Token
+11. Unit Testing with Moq
 
 ## ToDO
 

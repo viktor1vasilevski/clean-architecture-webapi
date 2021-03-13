@@ -43,11 +43,12 @@ use it as a api, deployed locally or publish on some server and use some front-e
        Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. 
        Just edit the table and change it manually to 1 and press TAB,
        or write this command in SQL
-       
+       ```sql
        USE {yourDatabaseName}
        GO
        UPDATE [dbo].[AspNetUserRoles] SET RoleId = 1 
        WHERE UserId = '{userId}'
+       ```
        
        This user, from then on will be with role of "Admin". 
     

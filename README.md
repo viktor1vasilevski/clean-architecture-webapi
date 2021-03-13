@@ -2,7 +2,7 @@
 
 ## Project Use Case
 
-This is a WebAPI, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
+This is a WebAPI Project, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
 You can add your own models, validations, logic, etc. You can also create MVC project on top of it, or just 
 use it as a api, deployed locally or publish on some server and use some front-end framework to show the data.
 
@@ -28,7 +28,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     
 6.  Next step is that you have to create "Admin" to take full experience of the API. 
     - because the API works with roles "Admin" and "User", you have to go first to create roles "Admin" and "User" in dbo.AspNetRoles.
-    - you can use this set of commands in SQL Server 2014 Management Studio to create the roles "Admin" and "User".
+    - you can use this set of commands in SQL Server 2014 Management Studio to create the roles "Admin" and "User".\
     ```sql
     USE {yourDatabaseName}
     GO
@@ -43,8 +43,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     - after you get registered, automatically, this user will have the role "User". 
        Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. 
        Just edit the table and change it manually to 1 and press TAB,
-       or write this command in SQL
-       
+       or write this command in SQL\
     ```sql
     USE {yourDatabaseName}
     GO

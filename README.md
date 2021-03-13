@@ -13,11 +13,11 @@ use it as a api, deployed locally or publish on some server and use some front-e
 2.  **Change the connection string** - In the WebAPI project in the ```appsettings.json``` file enter your server name 
     and name of the database(I was working on SQL Server 2014 Management Studio).
 
-3.  **Go into the Package Manager Console and type: ```sql add-migration "{some name of the migration}```**"<br />
+3.  **Go into the Package Manager Console and type: ```add-migration "{some name of the migration}```**"<br />
     ***!IMPORTANT - Make sure that your WebAPI is Set as Startup Project, and in the Package Manager Console your Default project is                                      CleanArchitectureWebAPI.Infrastructure.Data selected.***
     - this will create folder Migrations in CleanArchitectureWebAPI.Infrastructure.Data with the migration. 
       
-4.  When this is done, just type in the Package Manager Console: update-database.
+4.  When this is done, just type in the Package Manager Console: ```update-database```.
     - this will create the database with you database name with all the ASP.NET Identity tables and the models.
     
 5.  Run the project
@@ -57,7 +57,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this:
-      [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")] , below some other Http request).
+      ```C#[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]``` , below some other Http request).
 
 ## Principle, Patterns and external libraries used.
 

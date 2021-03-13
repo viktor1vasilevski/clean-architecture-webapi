@@ -71,7 +71,8 @@ use it as a api, deployed locally or publish on some server and use some front-e
     (in the project there is no request that is authorized by "User", so you can use this:<br />
       ```C#
       [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]
-      ```<br />below some other Http request).
+      ``` 
+      <br /> below some other Http request).
 
 ## Principle, Patterns and external libraries used.
 

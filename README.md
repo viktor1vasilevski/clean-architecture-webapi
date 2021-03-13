@@ -40,7 +40,11 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```
     
 7.  Next step is to register some user
-    - you can use Postman or Fiddler for registration, or some other program, and provide this json format in the body with your values
+    - you can use Postman or Fiddler for registration, or some other program, and provide this json format in the body with your own values
+      the method is
+      ```C#
+        [HttpPost]
+      ``` 
      ```json
      {
         "Username": "YourUsername",

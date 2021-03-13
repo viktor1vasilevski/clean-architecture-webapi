@@ -80,3 +80,5 @@ use it as a api, deployed locally or publish on some server and use some front-e
 
 ## Notes
 1. The solution folder Domian, should be named Domain. And also the name of the Class Library from that folder should be named CleanArchitectureWebAPI.Domain, not CleanArchitectureWebAPI.Domian.
+
+- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15

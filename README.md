@@ -10,7 +10,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
 
 1.  **Download the code** - Clone the repository or download the zip file
 
-2.  **Change the connection string** - In the WebAPI project in the ```jsonappsettings.json``` file enter your server name 
+2.  **Change the connection string** - In the WebAPI project in the ```appsettings.json``` file enter your server name 
     and name of the database(I was working on SQL Server 2014 Management Studio).
 
 3.  **Go into the Package Manager Console and type: add-migration "{some name of the migration}**"<br />

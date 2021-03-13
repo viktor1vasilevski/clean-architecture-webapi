@@ -62,14 +62,16 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```
        
        This user, from then on will be with role of "Admin", and when you Login with that user,
-       the commands Post, Create, Edit and Delete will be available, otherwise you will get the 
+       the commands Post, Create, Edit and Delete will be available, otherwise you will get the:
        ```js 
        401 Unauthorized
        ```
     
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this:<br />
-      ```[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]```<br />below some other Http request).
+      ```C#
+      [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]
+      ```<br />below some other Http request).
 
 ## Principle, Patterns and external libraries used.
 

@@ -3,7 +3,7 @@
 ## Project Use Case
 
 This is a WebAPI, implemented with Clean Architecture pattern. The code is very clean and it is very manageable. 
-You can add your own models, validations, etc. You can also create MVC project on top of it, or just 
+You can add your own models, validations, logic, etc. You can also create MVC project on top of it, or just 
 use it as a api, deployed locally or publish on some server and use some front-end framework to show the data.
 
 ## Installation
@@ -45,12 +45,12 @@ use it as a api, deployed locally or publish on some server and use some front-e
        Just edit the table and change it manually to 1 and press TAB,
        or write this command in SQL
        
-     ```sql
-     USE {yourDatabaseName}
-     GO
-     UPDATE [dbo].[AspNetUserRoles] SET RoleId = 1 
-     WHERE UserId = '{userId}'
-     ```
+    ```sql
+    USE {yourDatabaseName}
+    GO
+    UPDATE [dbo].[AspNetUserRoles] SET RoleId = 1 
+    WHERE UserId = '{userId}'
+    ```
        
        This user, from then on will be with role of "Admin". 
     

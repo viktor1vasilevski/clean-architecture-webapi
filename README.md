@@ -13,8 +13,8 @@ use it as a api, deployed locally or publish on some server and use some front-e
 2.  Change the connection string - In the WebAPI project in the appsettings.json file enter your server name 
     and name of the database(I was working on SQL Server 2014 Management Studio).
 
-3.  Go into the Package Manager Console and type: add-migration "{some name of the migration}"
-       ***!IMPORTANT - Make sure that your WebAPI is Set as Startup Project, and in the Package Manager Console your Default project is                             CleanArchitectureWebAPI.Infrastructure.Data selected.***
+3.  Go into the Package Manager Console and type: add-migration "{some name of the migration}"<br />
+    ***!IMPORTANT - Make sure that your WebAPI is Set as Startup Project, and in the Package Manager Console your Default project is                                      CleanArchitectureWebAPI.Infrastructure.Data selected.***
     - this will create folder Migrations in CleanArchitectureWebAPI.Infrastructure.Data with the migration. 
       
 4.  When this is done, just type in the Package Manager Console: update-database.

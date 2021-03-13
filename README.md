@@ -44,7 +44,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     - The method is ```Post``` and the url will be ```localhost:port/api/account/register```
      ```json
      {
-        "Username": "YourUsername",
+        "Username": "YourUsername", <--your user name
         "Email": "YourEmail@yahoo.com",
         "Password": "YourPassword@123",
         "ConfirmPassword": "YourPassword@123"

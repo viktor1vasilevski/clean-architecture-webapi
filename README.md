@@ -68,12 +68,10 @@ use it as a api, deployed locally or publish on some server and use some front-e
        ```
     
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
-    (in the project there is no request that is authorized by "User", so you can use this:<br />
+    (in the project there is no request that is authorized by "User", so you can use this below some other Http request).<br />
       ```C#
       [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]
       ``` 
-      <br /> below some other Http request).
-
 ## Principle, Patterns and external libraries used.
 
 1. Clean (Onion) project architecture with Domain Driven Design and SOLID principles.

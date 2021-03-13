@@ -42,13 +42,13 @@ use it as a api, deployed locally or publish on some server and use some front-e
 7.  Next step is to register some user
     - you can use Postman or Fiddler for registration, or some other program, and provide this json format in the body with your own values.
     - The method is ```Post``` and the url will be ```localhost:port/api/account/register```
-     ```json
-     {
-        "Username": "YourUsername", <--your user name
-        "Email": "YourEmail@yahoo.com",
-        "Password": "YourPassword@123",
-        "ConfirmPassword": "YourPassword@123"
-     }
+    ```json
+    {
+       "Username": "YourUsername",
+       "Email": "YourEmail@yahoo.com",
+       "Password": "YourPassword@123",
+       "ConfirmPassword": "YourPassword@123"
+    }
      ```
     - after you get registered, automatically, this user will have the role "User". 
        Go in the table AspNetUserRoles and notice that the RoleId is already 2 for that one user. 
@@ -67,6 +67,16 @@ use it as a api, deployed locally or publish on some server and use some front-e
        ```js 
        401 Unauthorized
        ```
+8.  Login
+    - Logging url: ```localhost/port/api/account/signin```, and this method is also ```Post``` and you should provid this json format into the body
+      ```json
+      {
+          "Username": "YourUsername",
+          "Password": "YourPassword@123"
+      }```
+        
+       
+       
     
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this below some other Http request).<br />

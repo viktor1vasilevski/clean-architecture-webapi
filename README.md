@@ -29,13 +29,14 @@ use it as a api, deployed locally or publish on some server and use some front-e
 6.  Next step is that you have to create "Admin" to take full experience of the API. 
     - because the API works with roles "Admin" and "User", you have to go first to create roles "Admin" and "User" in dbo.AspNetRoles.
     - you can use this set of commands in SQL Server 2014 Management Studio to create the roles "Admin" and "User".
-    
+    ```sql
     USE {yourDatabaseName}
     GO
     INSERT INTO dbo.AspNetRoles(Id, Name, NormalizedName, ConcurrencyStamp)
     VALUES (1, 'Admin', 'ADMIN', null)
     INSERT INTO dbo.AspNetRoles(Id, Name, NormalizedName, ConcurrencyStamp)
     VALUES (2, 'User', 'USER', null)
+    ```
     
 7.  Next step is to register some user
     - you can use swagger here, just to see what input should you provide to get registered. (you can use Postman or Fiddler for registration, or some other program)

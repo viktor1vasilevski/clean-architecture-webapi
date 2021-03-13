@@ -68,13 +68,16 @@ use it as a api, deployed locally or publish on some server and use some front-e
        401 Unauthorized
        ```
 8.  Login
-    - Logging url: ```localhost/port/api/account/signin```, and this method is also ```Post``` and you should provid this json format into the body
+    - Logging url: ```localhost/port/api/account/signin```, and this method is also ```Post``` and you should provide this json format into the body
       ```json
       {
           "Username": "YourUsername",
           "Password": "YourPassword@123"
-      }```
-        
+      }
+      ```
+      the logging user will be successful and you will recive a JWT Token, 
+      which you must use for Authorization with the prefix Bearer : {YourToken}
+      `In Postman`
        
        
     

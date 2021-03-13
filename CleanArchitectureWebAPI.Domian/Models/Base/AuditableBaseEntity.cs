@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CleanArchitectureWebAPI.Domian.Models.Base
 {
-    // This class is just for tracking data.
+    // Tracking data
     public abstract class AuditableBaseEntity : BaseEntity
     {
         public virtual string CreatedBy { get; set; }

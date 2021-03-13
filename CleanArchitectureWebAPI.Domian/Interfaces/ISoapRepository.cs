@@ -8,6 +8,5 @@ namespace CleanArchitectureWebAPI.Domian.Interfaces
 {
     public interface ISoapRepository : IBaseRepository<Soap>
     {
-        // This is where we put the methods specific for that class/repository
     }
 }

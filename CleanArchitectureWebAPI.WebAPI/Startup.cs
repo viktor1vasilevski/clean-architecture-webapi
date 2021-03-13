@@ -51,7 +51,7 @@ namespace CleanArchitectureWebAPI.WebAPI
                        .AllowAnyHeader();
             }));
 
-            // This is where we register the context in our database
+            // This is where we register the context
             services.AddDbContext<LibraryDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("MyConnectionString")));
 
@@ -61,7 +61,7 @@ namespace CleanArchitectureWebAPI.WebAPI
             // Registering Inversion Of Control
             services.AddIoCService();
 
-            // Registering the swagger
+            // Registering the Swagger
             services.AddSwaggerDocument();
 
             // Registering the HttpContext Accessor which we use for auditing in the LibraryDbContext
@@ -84,7 +84,7 @@ namespace CleanArchitectureWebAPI.WebAPI
             // Using the Response Caching
             app.UseResponseCaching();
 
-            // Request Logging middleware
+            // Use Serilog Logger
             app.UseSerilogRequestLogging();
 
             // Error Logging middleware

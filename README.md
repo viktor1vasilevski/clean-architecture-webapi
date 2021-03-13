@@ -14,7 +14,9 @@ use it as a api, deployed locally or publish on some server and use some front-e
     and name of the database(I was working on SQL Server 2014 Management Studio).
 
 3.  **Go into the Package Manager Console and type: add-migration "{some name of the migration}**"<br />
-    ***!IMPORTANT - Make sure that your WebAPI is Set as Startup Project, and in the Package Manager Console your Default project is                                      CleanArchitectureWebAPI.Infrastructure.Data selected.***
+    ```diff
+    -!IMPORTANT - Make sure that your WebAPI is Set as Startup Project, and in the Package Manager Console your Default project is                                      CleanArchitectureWebAPI.Infrastructure.Data selected.
+    ```
     - this will create folder Migrations in CleanArchitectureWebAPI.Infrastructure.Data with the migration. 
       
 4.  When this is done, just type in the Package Manager Console: update-database.
@@ -81,4 +83,3 @@ use it as a api, deployed locally or publish on some server and use some front-e
 ## Notes
 1. The solution folder Domian, should be named Domain. And also the name of the Class Library from that folder should be named CleanArchitectureWebAPI.Domain, not CleanArchitectureWebAPI.Domian.
 
-- ![#f03c15](https://via.placeholder.com/15/f03c15/000000?text=+) `#f03c15

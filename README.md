@@ -92,5 +92,5 @@ use it as a api, deployed locally or publish on some server and use some front-e
 2. The enities don't have foreign keys or any common table
 
 ## Notes
-1. The solution folder Domian, should be named Domain. And also the name of the Class Library from that folder should be named CleanArchitectureWebAPI.Domain, not CleanArchitectureWebAPI.Domian.
+1. The solution folder Domian, should be named Domain. And also the name of the Class Library from that folder should be named CleanArchitectureWebAPI.Dom***ai***n, not CleanArchitectureWebAPI.Dom***ia***n.
 

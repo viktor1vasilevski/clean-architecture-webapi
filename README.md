@@ -8,7 +8,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
 
 ## Installation
 
-1.  Download the code - Clone the repository or download the zip file
+1.  **Download the code** - Clone the repository or download the zip file
 
 2.  Change the connection string - In the WebAPI project in the appsettings.json file enter your server name 
     and name of the database(I was working on SQL Server 2014 Management Studio).

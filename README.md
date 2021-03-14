@@ -17,8 +17,6 @@ use it as a api, deployed locally or publish on some server and use some front-e
     <br />
     <br />
     ***!IMPORTANT - Make sure that your WebAPI is Set as Startup Project, and in the Package Manager Console your Default project is                                      CleanArchitectureWebAPI.Infrastructure.Data selected.***
-    <br />
-    <br />
     - this will create folder Migrations in CleanArchitectureWebAPI.Infrastructure.Data with the migration. 
       
 4.  When this is done, just type in the Package Manager Console: ```Update-Database```

@@ -42,8 +42,8 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```
     
 7.  Next step is to register some user <br />
-    ***from this point on, your api/project should be running all the time during the register, login and CRUD operations***
-    ***I hosted the api/project locally, on my computer***
+    -***from this point on, your api/project should be running all the time during the register, login and CRUD operations***
+    -***I hosted the api/project locally, on my computer***
     - you can use Postman or Fiddler for registration, or some other program, and provide this json format in the body with your own values.
       (I used Postman)
     - The method is ```Post``` and the url will be ```localhost:port/api/account/register```<br />

@@ -31,7 +31,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     - you can use this set of commands in SQL Server 2014 Management Studio to create the roles "Admin" and "User".
 
     ```sql
-    USE yourDatabaseName
+    USE [yourDatabaseName]
     GO
     INSERT INTO dbo.AspNetRoles(Id, Name, NormalizedName, ConcurrencyStamp)
     VALUES (1, 'Admin', 'ADMIN', null)
@@ -58,7 +58,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
        or write this command in SQL
        
     ```sql
-    USE yourDatabaseName
+    USE [yourDatabaseName]
     GO
     UPDATE [dbo].[AspNetUserRoles] SET RoleId = 1 
     WHERE UserId = '{userId}'
@@ -70,7 +70,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```json
     {
         "Username": "YourUsername",
-          "Password": "YourPassword@123"
+        "Password": "YourPassword@123"
     }
       ```
     the logging user will be successful and you will recive a JWT Token,<br />

@@ -41,7 +41,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     VALUES (2, 'User', 'USER', null)
     ```
     
-7.  Next step is to register some user
+7.  Next step is to register some user <br />
     ***from this point on, your api/project should be running all the time during the register, login and CRUD operations***
     - you can use Postman or Fiddler for registration, or some other program, and provide this json format in the body with your own values.
       (I used Postman)

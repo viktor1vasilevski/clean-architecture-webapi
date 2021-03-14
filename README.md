@@ -62,32 +62,29 @@ use it as a api, deployed locally or publish on some server and use some front-e
     WHERE UserId = '{userId}'
     ```
        
-       This user, from then on will be with role of "Admin", and when you Login with that user,
-       the commands Post, Create, Edit and Delete will be available, otherwise you will get the:
-       ```js 
-       401 Unauthorized
-       ```
+    This user, from then on will be with role of "Admin", and when you Login with that user,
+    the commands Post, Create, Edit and Delete will be available, otherwise you will get the:
+    ```js 
+    401 Unauthorized
+    ```
 8.  Login
     - Logging url: ```localhost/port/api/account/signin```, and this method is also ```Post``` and you should provide this json format into the body
-      ```json
-      {
-          "Username": "YourUsername",
+    ```json
+    {
+        "Username": "YourUsername",
           "Password": "YourPassword@123"
-      }
+    }
       ```
-      the logging user will be successful and you will recive a JWT Token,<br />
-      which you must use for Authorization with the prefix Bearer : {YourToken}
-      ```
-      In Postman just select the Auth and from the dropdown menu select Bearer Token
-      ```
-       
-       
-    
+    the logging user will be successful and you will recive a JWT Token,<br />
+    which you must use for Authorization with the prefix Bearer : {YourToken}
+    ```
+    In Postman just select the Auth, and from the dropdown menu select Bearer Token
+    ```
     Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
     (in the project there is no request that is authorized by "User", so you can use this below some other Http request).<br />
-      ```C#
-      [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]
-      ``` 
+    ```C#
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]
+    ``` 
 ## Principle, Patterns and external libraries used.
 
 1. Clean (Onion) project architecture with Domain Driven Design and SOLID principles.

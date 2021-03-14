@@ -40,7 +40,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```
     
 7.  Next step is to register some user
-    <!--- just --->
+    ***from this point on, your api/project should be running all the time during the register, login and CRUD operations***
     - you can use Postman or Fiddler for registration, or some other program, and provide this json format in the body with your own values.
       (I used Postman)
     - The method is ```Post``` and the url will be ```localhost:port/api/account/register```
@@ -65,7 +65,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```   
     This user, from then on will be with role of "Admin".
 
-8.  Next step is to Login some user
+8.  Next step is to Signin some user
     - Logging url: ```localhost/port/api/account/signin```, and this method is also ```Post``` and you should provide this json format into the body
     ```json
     {
@@ -80,6 +80,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```
     
     Now the commands Post, Create, Edit and Delete will be available, otherwise you will get the:
+    **for Get and GetById you dont need no Authorization**
     ```js 
     401 Unauthorized
     ```

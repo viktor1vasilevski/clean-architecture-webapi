@@ -69,8 +69,8 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ```   
     This user, from then on will be with role of "Admin".
 
-8.  Next step is to Signin some user
-    - Logging url: ```localhost/port/api/account/signin```, and this method is also ```Post``` and you should provide this json format into the body
+8.  Next step is to Sign In some user
+    - url: ```localhost/port/api/account/signin```, and this method is also ```Post``` and you should provide this json format into the body
     ```json
     {
         "Username": "YourUsername",

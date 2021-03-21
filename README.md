@@ -1,4 +1,4 @@
-# Clean Architecture ASP.NET Web API Core 3.1
+# Clean Architecture ASP.NET Core Web API 3.1
 
 ## Project Use Case
 

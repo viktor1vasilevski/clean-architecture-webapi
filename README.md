@@ -65,7 +65,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     USE [yourDatabaseName]
     GO
     UPDATE [dbo].[AspNetUserRoles] SET RoleId = 1 
-    WHERE UserId = '{userId}'
+    WHERE UserId = 'userId'
     ```   
     This user, from then on will be with role of "Admin".
 

@@ -78,7 +78,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     }
       ```
     the logging user will be successful and you will recive a JWT Token,<br />
-    which you must use for Authorization with the prefix Bearer : {YourToken}
+    which you must use for Authorization with the prefix Bearer : YourToken
     ```
     In Postman just select the Auth, and from the dropdown menu select Bearer Token
     ```

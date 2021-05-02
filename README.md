@@ -97,7 +97,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     ``` 
 ## Principle, Patterns and external libraries used.
 
-1. Clean (Onion) project architecture with Domain Driven Design and SOLID principles.
+1. Clean (Onion) Architecture Project with Domain Driven Design and SOLID principles.
 2. ASP.NET Core Dependency Injection
 3. Repository Pattern
 4. Unit Of Work Pattern

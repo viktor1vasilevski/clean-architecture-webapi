@@ -90,7 +90,7 @@ use it as a api, deployed locally or publish on some server and use some front-e
     *(for Get and GetById you dont need no Authorization)*
     <br />
     <br />
-    Every other registered user in the future will be with the role "User". To change it to "Admin" just do the previous step. 
+    Every other registered user in the future will be with the role "User". To change it to "Admin" just do the step 7, part 5. 
     (in the project there is no request that is authorized by "User", so you can use this below some other Http request).<br />
     ```C#
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "User")]

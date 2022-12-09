@@ -61,7 +61,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                   "creamy lather for a thorough beard cleaning that won't leave your beard or face dry",
                     UnitPrice = 13,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/bdZ_1611618012_soap-6.jpg",
+                    URL = LibraryDbContextSeedData.ORANGE_BRICK,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -76,7 +76,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                   "extra virgin organic Coconut, organic Palm and extra virgin Olive oils.",
                     UnitPrice = 11,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/jyC_1611618012_soap-2.jpg",
+                    URL = LibraryDbContextSeedData.BROWN,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -90,7 +90,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                   "Goat Milk and Organic Essential Oils, Hand mixed, poured and cut into long lasting bars",
                     UnitPrice = 12,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/9j2_1611618012_soap-3.jpg",
+                    URL = LibraryDbContextSeedData.LIGHT_YELLOW,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -120,7 +120,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                   "along with bergamot and tonka bean.",
                     UnitPrice = 23,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/Lb7_1611618063_oil-3.jpg",
+                    URL = LibraryDbContextSeedData.FOREST_WOODS,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -137,7 +137,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                    "oils through your beard and mustache hair",
                     UnitPrice = 28,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/ioy_1611618063_oil-5.jpg",
+                    URL = LibraryDbContextSeedData.CEDAR,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -155,7 +155,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                    "Timber - Mild Scent of Cedar & Fir NeedleMB BEARD OIL TIMBER",
                     UnitPrice = 25,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/XHI_1611618063_oil-1.jpg",
+                    URL = LibraryDbContextSeedData.SUMMER_BREEZE,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -184,7 +184,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                    "Almond, Virgin Pumpkin Seed, and Apricot Kernel Oils",
                     UnitPrice = 21,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/Un5_1611618089_balm-1.jpg",
+                    URL = LibraryDbContextSeedData.HONEST_AMISH,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -199,7 +199,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                   "your hair, improve strength & shine",
                     UnitPrice = 19,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/PoU_1611618089_balm-4.jpg",
+                    URL = LibraryDbContextSeedData.ROCKY_MOUNTAIN,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"
@@ -214,7 +214,7 @@ namespace CleanArchitectureWebAPI.Infrastructure.Data.Context
                                   "leave your beard feeling and looking amazing",
                     UnitPrice = 20,
                     UnitQuantity = 100,
-                    URL = "https://app.imgforce.com/images/user/SLw_1611618089_balm-5.jpg",
+                    URL = LibraryDbContextSeedData.OLYMPUS,
                     Created = DateTime.Now,
                     LastModified = DateTime.Now,
                     CreatedBy = "Viktor"

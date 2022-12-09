@@ -1,0 +1,669 @@
+12/01/2022 16:58:43 +01:00 Application is starting
+12/01/2022 16:58:56 +01:00 HTTP "GET" "/swagger" responded 302 in 237.6477 ms
+12/01/2022 16:58:57 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 1055.0361 ms
+12/01/2022 16:58:58 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 222.9470 ms
+12/01/2022 16:58:58 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 219.5671 ms
+12/01/2022 16:58:58 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 238.1350 ms
+12/01/2022 16:59:01 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 2458.4462 ms
+12/01/2022 16:59:05 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 13.4597 ms
+12/01/2022 16:59:06 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 1256.1413 ms
+12/01/2022 16:59:08 +01:00 HTTP "GET" "/api/soaps" responded 200 in 723.2899 ms
+12/01/2022 16:59:19 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 2.1601 ms
+12/01/2022 16:59:19 +01:00 HTTP "POST" "/api/soaps" responded 400 in 164.9920 ms
+12/01/2022 17:01:15 +01:00 HTTP "GET" "/api/soaps" responded 200 in 30.2371 ms
+12/01/2022 17:01:19 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 4.0053 ms
+12/01/2022 17:01:19 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 182.4788 ms
+12/01/2022 17:01:34 +01:00 HTTP "GET" "/api/soaps" responded 200 in 8.8679 ms
+12/01/2022 17:02:17 +01:00 HTTP "GET" "/api/soaps" responded 200 in 21.3617 ms
+12/01/2022 17:02:23 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.6400 ms
+12/01/2022 17:02:23 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 164.5484 ms
+12/01/2022 17:02:24 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.6614 ms
+12/01/2022 17:03:00 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 1.2886 ms
+12/01/2022 17:03:00 +01:00 HTTP "POST" "/api/soaps" responded 400 in 36.2615 ms
+12/01/2022 17:03:47 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.3939 ms
+12/01/2022 17:03:47 +01:00 HTTP "POST" "/api/soaps" responded 400 in 9.4973 ms
+12/01/2022 17:03:51 +01:00 HTTP "GET" "/api/balms" responded 200 in 91.6699 ms
+12/01/2022 17:03:51 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.6540 ms
+12/01/2022 17:04:19 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.5186 ms
+12/01/2022 17:04:19 +01:00 HTTP "GET" "/favicon.ico" responded 404 in 0.8468 ms
+12/01/2022 17:05:55 +01:00 HTTP "GET" "/api/soaps" responded 200 in 20.1237 ms
+12/01/2022 17:06:01 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.4564 ms
+12/01/2022 17:06:02 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 111.1277 ms
+12/01/2022 17:06:03 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.2723 ms
+12/01/2022 17:06:19 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.3940 ms
+12/01/2022 17:06:19 +01:00 HTTP "POST" "/api/soaps" responded 400 in 8.6376 ms
+12/01/2022 17:07:12 +01:00 HTTP "OPTIONS" "/api/account/signout" responded 204 in 2.1043 ms
+12/01/2022 17:07:13 +01:00 HTTP "POST" "/api/account/signout" responded 204 in 34.7304 ms
+12/01/2022 17:07:16 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.3571 ms
+12/01/2022 17:07:16 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 111.3893 ms
+12/01/2022 17:07:17 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.4540 ms
+12/01/2022 17:07:18 +01:00 HTTP "GET" "/api/balms" responded 200 in 3.8743 ms
+12/01/2022 17:07:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.7784 ms
+12/01/2022 17:09:18 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.5962 ms
+12/01/2022 17:09:18 +01:00 HTTP "POST" "/api/soaps" responded 400 in 14.7710 ms
+12/01/2022 17:11:53 +01:00 HTTP "GET" "/api/soaps" responded 200 in 19.1296 ms
+12/01/2022 17:12:00 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.5102 ms
+12/01/2022 17:12:01 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 204.2054 ms
+12/01/2022 17:12:02 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.5156 ms
+12/01/2022 17:12:45 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.7465 ms
+12/01/2022 17:12:45 +01:00 HTTP "POST" "/api/soaps" responded 400 in 10.6226 ms
+12/01/2022 17:12:48 +01:00 HTTP "GET" "/api/balms" responded 200 in 14.9917 ms
+12/01/2022 17:12:49 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.5257 ms
+12/01/2022 17:14:39 +01:00 HTTP "GET" "/api/soaps" responded 200 in 22.8443 ms
+12/01/2022 17:14:42 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.3818 ms
+12/01/2022 17:14:42 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 73.5270 ms
+12/01/2022 17:14:43 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.5825 ms
+12/01/2022 17:15:37 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.3887 ms
+12/01/2022 17:15:47 +01:00 HTTP "POST" "/api/soaps" responded 200 in 10244.0649 ms
+12/01/2022 17:15:57 +01:00 HTTP "GET" "/api/balms" responded 200 in 9.6009 ms
+12/01/2022 17:15:58 +01:00 HTTP "GET" "/api/soaps" responded 200 in 12.8649 ms
+12/01/2022 17:17:04 +01:00 HTTP "GET" "/api/soaps" responded 200 in 20.9064 ms
+12/01/2022 17:17:11 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2019 ms
+12/01/2022 17:17:11 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 104.0921 ms
+12/01/2022 17:17:12 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.5875 ms
+12/01/2022 17:17:28 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.4329 ms
+12/01/2022 17:17:30 +01:00 HTTP "POST" "/api/soaps" responded 200 in 2090.3813 ms
+12/01/2022 17:17:36 +01:00 HTTP "GET" "/api/balms" responded 200 in 1.1846 ms
+12/01/2022 17:17:37 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.9877 ms
+12/01/2022 17:17:57 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.4078 ms
+12/01/2022 17:17:57 +01:00 HTTP "POST" "/api/soaps" responded 400 in 5.5544 ms
+12/01/2022 17:18:01 +01:00 HTTP "GET" "/api/balms" responded 200 in 9.1910 ms
+12/01/2022 17:18:02 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1581 ms
+12/01/2022 17:58:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 140.3817 ms
+12/01/2022 17:58:31 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.0028 ms
+12/01/2022 18:00:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.8618 ms
+12/01/2022 18:00:26 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1759 ms
+12/01/2022 18:00:26 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 135.0531 ms
+12/01/2022 18:00:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1933 ms
+12/01/2022 18:01:20 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.7244 ms
+12/01/2022 18:01:20 +01:00 HTTP "POST" "/api/soaps" responded 400 in 9.9279 ms
+12/01/2022 18:02:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 21.8762 ms
+12/01/2022 18:02:36 +01:00 HTTP "GET" "/api/soaps" responded 200 in 9.7204 ms
+12/01/2022 18:03:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 9.9657 ms
+12/01/2022 18:03:32 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2762 ms
+12/01/2022 18:03:32 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 81.4067 ms
+12/01/2022 18:03:34 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.2664 ms
+12/01/2022 18:03:45 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.5363 ms
+12/01/2022 18:03:45 +01:00 HTTP "POST" "/api/soaps" responded 400 in 9.7495 ms
+12/01/2022 18:29:28 +01:00 HTTP "GET" "/api/soaps" responded 200 in 86.6335 ms
+12/01/2022 18:32:30 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.9737 ms
+12/01/2022 18:32:49 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3163 ms
+12/01/2022 18:33:15 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.3773 ms
+12/01/2022 18:35:18 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8805 ms
+12/01/2022 18:35:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8006 ms
+12/01/2022 18:36:53 +01:00 HTTP "GET" "/api/soaps" responded 200 in 14.1022 ms
+12/01/2022 18:36:55 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.0937 ms
+12/01/2022 18:36:55 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 93.0610 ms
+12/01/2022 18:36:56 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3659 ms
+12/01/2022 18:37:41 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.6002 ms
+12/01/2022 18:39:54 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.3978 ms
+12/01/2022 18:40:15 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8061 ms
+12/01/2022 18:41:07 +01:00 HTTP "GET" "/api/soaps" responded 200 in 42.0202 ms
+12/01/2022 18:41:10 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.6562 ms
+12/01/2022 18:41:28 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1113 ms
+12/01/2022 18:41:28 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 77.9563 ms
+12/01/2022 18:41:29 +01:00 HTTP "GET" "/api/soaps" responded 200 in 13.0931 ms
+12/01/2022 18:41:39 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.4830 ms
+12/01/2022 18:41:53 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.6065 ms
+12/01/2022 18:42:06 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.3368 ms
+12/01/2022 18:42:06 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 40.4729 ms
+12/01/2022 18:42:08 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.5568 ms
+12/01/2022 18:43:13 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.4750 ms
+12/01/2022 18:48:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.0208 ms
+12/01/2022 18:48:39 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.5631 ms
+12/01/2022 18:48:39 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 253.8132 ms
+12/01/2022 18:48:40 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3174 ms
+12/01/2022 18:49:20 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3088 ms
+12/01/2022 18:49:32 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1212 ms
+12/01/2022 18:49:32 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 121.5522 ms
+12/01/2022 18:49:33 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3394 ms
+12/01/2022 18:50:48 +01:00 HTTP "GET" "/api/soaps" responded 200 in 9.7080 ms
+12/01/2022 18:51:00 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1411 ms
+12/01/2022 18:51:00 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 36.4546 ms
+12/01/2022 18:51:01 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.2785 ms
+12/01/2022 18:51:26 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.1869 ms
+12/01/2022 18:51:26 +01:00 HTTP "POST" "/api/soaps" responded 400 in 8.2226 ms
+12/01/2022 18:51:45 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5304 ms
+12/01/2022 18:51:50 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.5508 ms
+12/01/2022 18:51:50 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 133.5594 ms
+12/01/2022 18:51:52 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1540 ms
+12/01/2022 18:54:18 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.2176 ms
+12/01/2022 18:54:18 +01:00 HTTP "POST" "/api/soaps" responded 400 in 8.5106 ms
+12/01/2022 18:54:23 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.7688 ms
+12/01/2022 18:54:34 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1394 ms
+12/01/2022 18:54:34 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 104.4145 ms
+12/01/2022 18:54:35 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.2362 ms
+12/01/2022 18:55:00 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.1591 ms
+12/01/2022 18:55:00 +01:00 HTTP "POST" "/api/soaps" responded 400 in 6.2506 ms
+12/01/2022 18:55:23 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.6490 ms
+12/01/2022 18:55:45 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.9354 ms
+12/01/2022 18:55:51 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.9022 ms
+12/01/2022 18:56:57 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.6803 ms
+12/01/2022 18:58:19 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2056 ms
+12/01/2022 18:58:19 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 110.7174 ms
+12/01/2022 18:58:19 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3916 ms
+12/01/2022 18:58:50 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8129 ms
+12/01/2022 18:58:54 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2368 ms
+12/01/2022 18:58:54 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 90.3776 ms
+12/01/2022 18:58:55 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.4028 ms
+12/01/2022 18:59:41 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 1.7264 ms
+12/01/2022 18:59:41 +01:00 HTTP "POST" "/api/soaps" responded 400 in 3.0297 ms
+12/01/2022 19:00:38 +01:00 Application is starting
+12/01/2022 19:00:42 +01:00 HTTP "GET" "/swagger" responded 302 in 74.2622 ms
+12/01/2022 19:00:42 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 248.8387 ms
+12/01/2022 19:00:42 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 34.3549 ms
+12/01/2022 19:00:42 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 39.3917 ms
+12/01/2022 19:00:42 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 52.2174 ms
+12/01/2022 19:00:43 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 813.9804 ms
+12/01/2022 19:00:54 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 21.4876 ms
+12/01/2022 19:00:55 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 691.1016 ms
+12/01/2022 19:01:00 +01:00 HTTP "GET" "/api/soaps" responded 200 in 257.7350 ms
+12/01/2022 19:01:10 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.7743 ms
+12/01/2022 19:01:10 +01:00 HTTP "POST" "/api/soaps" responded 400 in 55.6724 ms
+12/01/2022 19:02:50 +01:00 HTTP "GET" "/api/soaps" responded 200 in 13.9886 ms
+12/01/2022 19:03:03 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 3.6072 ms
+12/01/2022 19:03:03 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 202.2426 ms
+12/01/2022 19:03:05 +01:00 HTTP "GET" "/api/soaps" responded 200 in 16.3122 ms
+12/01/2022 19:03:26 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 12.0273 ms
+12/01/2022 19:03:26 +01:00 HTTP "POST" "/api/soaps" responded 400 in 14.0480 ms
+12/01/2022 19:04:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 12.2697 ms
+12/01/2022 19:05:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.0513 ms
+12/01/2022 19:05:25 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2704 ms
+12/01/2022 19:05:25 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 61.6999 ms
+12/01/2022 19:05:26 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.6551 ms
+12/01/2022 19:05:42 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 0.8762 ms
+12/01/2022 19:05:42 +01:00 HTTP "POST" "/api/soaps" responded 400 in 13.1368 ms
+12/01/2022 19:06:36 +01:00 Application is starting
+12/01/2022 19:06:40 +01:00 HTTP "GET" "/swagger" responded 302 in 75.6855 ms
+12/01/2022 19:06:40 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 356.8586 ms
+12/01/2022 19:06:40 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 67.5333 ms
+12/01/2022 19:06:40 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 68.0237 ms
+12/01/2022 19:06:40 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 68.7892 ms
+12/01/2022 19:06:41 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 933.3641 ms
+12/01/2022 19:06:53 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 6.1751 ms
+12/01/2022 19:06:53 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 602.2048 ms
+12/01/2022 19:06:54 +01:00 HTTP "GET" "/api/soaps" responded 200 in 305.0392 ms
+12/01/2022 19:07:03 +01:00 HTTP "OPTIONS" "/api/soaps" responded 204 in 1.3186 ms
+12/01/2022 19:07:03 +01:00 HTTP "POST" "/api/soaps" responded 400 in 60.5584 ms
+12/01/2022 19:15:45 +01:00 HTTP "GET" "/api/soaps" responded 200 in 12.7775 ms
+12/01/2022 19:15:59 +01:00 HTTP "GET" "/api/balms" responded 200 in 307.7913 ms
+12/01/2022 19:16:01 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.4926 ms
+12/01/2022 19:16:07 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 3.6611 ms
+12/01/2022 19:16:08 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 151.0849 ms
+12/01/2022 19:16:09 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.6779 ms
+12/01/2022 19:16:39 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.7417 ms
+12/01/2022 19:19:33 +01:00 HTTP "GET" "/api/soaps" responded 200 in 8.9752 ms
+12/01/2022 19:20:25 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.8307 ms
+12/01/2022 19:20:25 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 190.1419 ms
+12/01/2022 19:20:26 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.8050 ms
+12/01/2022 19:22:38 +01:00 HTTP "OPTIONS" "/api/account/signout" responded 204 in 0.7274 ms
+12/01/2022 19:22:38 +01:00 HTTP "POST" "/api/account/signout" responded 204 in 26.4346 ms
+12/01/2022 19:23:11 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.9333 ms
+12/01/2022 19:23:11 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 128.0443 ms
+12/01/2022 19:23:12 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.9459 ms
+12/01/2022 19:25:38 +01:00 Application is starting
+12/01/2022 19:25:42 +01:00 HTTP "GET" "/swagger" responded 302 in 76.5536 ms
+12/01/2022 19:25:42 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 279.1382 ms
+12/01/2022 19:25:42 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 61.4553 ms
+12/01/2022 19:25:42 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 61.0161 ms
+12/01/2022 19:25:42 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 63.0458 ms
+12/01/2022 19:25:44 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 847.8299 ms
+12/01/2022 19:26:05 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 16.2210 ms
+12/01/2022 19:26:05 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 419.3099 ms
+12/01/2022 19:26:07 +01:00 HTTP "GET" "/api/soaps" responded 200 in 307.5725 ms
+12/01/2022 19:26:11 +01:00 HTTP "GET" "/api/balms" responded 200 in 77.0670 ms
+12/01/2022 19:26:12 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.5298 ms
+12/01/2022 19:26:25 +01:00 HTTP "GET" "/api/balms" responded 200 in 11.4043 ms
+12/01/2022 19:26:28 +01:00 HTTP "GET" "/api/oils" responded 200 in 122.1427 ms
+12/01/2022 19:26:30 +01:00 HTTP "GET" "/api/soaps" responded 200 in 22.6014 ms
+12/01/2022 19:32:08 +01:00 HTTP "GET" "/api/soaps" responded 200 in 51.3430 ms
+12/01/2022 19:32:09 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.9039 ms
+12/01/2022 19:32:31 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.3174 ms
+12/01/2022 19:32:31 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.6894 ms
+12/01/2022 19:32:36 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.6762 ms
+12/01/2022 19:32:36 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.0058 ms
+12/01/2022 19:32:41 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 3.6952 ms
+12/01/2022 19:32:41 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 245.5902 ms
+12/01/2022 19:32:42 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.3011 ms
+12/01/2022 19:35:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 8.9865 ms
+12/01/2022 19:35:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.5288 ms
+12/01/2022 19:36:00 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.1730 ms
+12/01/2022 19:36:00 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.4372 ms
+12/01/2022 19:37:13 +01:00 HTTP "GET" "/api/soaps" responded 200 in 11.3355 ms
+12/01/2022 19:37:13 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.6616 ms
+12/01/2022 19:37:29 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.7209 ms
+12/01/2022 19:37:29 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.9382 ms
+12/01/2022 19:38:04 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.4181 ms
+12/01/2022 19:38:04 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.9360 ms
+12/01/2022 19:38:08 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.2816 ms
+12/01/2022 19:38:08 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.0230 ms
+12/01/2022 19:38:32 +01:00 HTTP "GET" "/api/soaps" responded 200 in 15.7453 ms
+12/01/2022 19:38:32 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.8240 ms
+12/01/2022 19:38:47 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.4358 ms
+12/01/2022 19:38:47 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.7887 ms
+12/01/2022 19:41:59 +01:00 HTTP "GET" "/api/soaps" responded 200 in 17.5795 ms
+12/01/2022 19:41:59 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.9211 ms
+12/01/2022 19:42:52 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.5177 ms
+12/01/2022 19:42:52 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.8590 ms
+12/01/2022 19:43:00 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.0527 ms
+12/01/2022 19:43:03 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.3371 ms
+12/01/2022 19:43:03 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 133.5855 ms
+12/01/2022 19:43:05 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.0554 ms
+12/01/2022 19:44:39 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.3404 ms
+12/01/2022 19:44:39 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5268 ms
+12/01/2022 19:45:18 +01:00 HTTP "GET" "/api/soaps" responded 200 in 39.1682 ms
+12/01/2022 19:45:18 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.7518 ms
+12/01/2022 19:45:33 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2794 ms
+12/01/2022 19:45:34 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 137.3746 ms
+12/01/2022 19:45:35 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.0668 ms
+12/01/2022 19:45:38 +01:00 HTTP "OPTIONS" "/api/soaps/db4b7cb6-bb4b-44c2-6988-08dad3c97427" responded 204 in 0.2174 ms
+12/01/2022 19:45:44 +01:00 HTTP "DELETE" "/api/soaps/db4b7cb6-bb4b-44c2-6988-08dad3c97427" responded 200 in 5656.8470 ms
+12/01/2022 19:45:50 +01:00 HTTP "GET" "/api/balms" responded 200 in 4.7677 ms
+12/01/2022 19:45:51 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.7399 ms
+12/01/2022 19:51:07 +01:00 Application is starting
+12/01/2022 19:51:10 +01:00 HTTP "GET" "/swagger" responded 302 in 80.6520 ms
+12/01/2022 19:51:11 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 260.8318 ms
+12/01/2022 19:51:11 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 56.6259 ms
+12/01/2022 19:51:11 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 56.6553 ms
+12/01/2022 19:51:11 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 56.9947 ms
+12/01/2022 19:51:12 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 747.4706 ms
+12/01/2022 19:52:01 +01:00 Application is starting
+12/01/2022 19:52:04 +01:00 HTTP "GET" "/swagger" responded 302 in 83.5008 ms
+12/01/2022 19:52:04 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 253.6046 ms
+12/01/2022 19:52:04 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 58.5913 ms
+12/01/2022 19:52:04 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 59.0959 ms
+12/01/2022 19:52:04 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 63.9450 ms
+12/01/2022 19:52:05 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 757.0170 ms
+12/01/2022 19:52:34 +01:00 HTTP "GET" "/api/soaps" responded 200 in 409.8917 ms
+12/01/2022 19:52:42 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 7.1684 ms
+12/01/2022 19:52:43 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 475.0370 ms
+12/01/2022 19:52:44 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.4730 ms
+12/01/2022 19:52:48 +01:00 HTTP "OPTIONS" "/api/soaps/6324784e-b761-44db-6987-08dad3c97427" responded 204 in 1.4765 ms
+12/01/2022 19:52:55 +01:00 HTTP "DELETE" "/api/soaps/6324784e-b761-44db-6987-08dad3c97427" responded 200 in 6744.0413 ms
+12/01/2022 19:53:02 +01:00 HTTP "GET" "/api/balms" responded 200 in 63.7293 ms
+12/01/2022 19:53:03 +01:00 HTTP "GET" "/api/soaps" responded 200 in 26.5967 ms
+12/01/2022 19:54:20 +01:00 HTTP "GET" "/api/soaps" responded 200 in 12.1300 ms
+12/01/2022 19:54:39 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.6013 ms
+12/01/2022 19:55:23 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.2031 ms
+12/01/2022 19:55:32 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.2539 ms
+12/01/2022 19:55:41 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.8484 ms
+12/01/2022 19:55:45 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.9618 ms
+12/01/2022 19:55:45 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 201.0248 ms
+12/01/2022 19:55:46 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.1044 ms
+12/01/2022 19:56:15 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.5611 ms
+12/01/2022 19:56:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.5168 ms
+12/01/2022 22:05:11 +01:00 HTTP "GET" "/api/soaps" responded 200 in 21.3684 ms
+12/01/2022 22:05:15 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.4494 ms
+12/01/2022 22:05:15 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 193.1401 ms
+12/01/2022 22:05:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.5888 ms
+12/01/2022 22:05:29 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.8969 ms
+12/01/2022 22:05:31 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.3977 ms
+12/01/2022 22:05:31 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 72.4977 ms
+12/01/2022 22:05:32 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.3989 ms
+12/01/2022 22:06:23 +01:00 HTTP "GET" "/api/soaps" responded 200 in 9.0299 ms
+12/01/2022 22:06:26 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1345 ms
+12/01/2022 22:06:27 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 49.5923 ms
+12/01/2022 22:06:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.5741 ms
+12/01/2022 22:07:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.3749 ms
+12/01/2022 22:07:31 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.6816 ms
+12/01/2022 22:07:31 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 121.5692 ms
+12/01/2022 22:07:32 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.8953 ms
+12/01/2022 22:08:01 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.1056 ms
+12/01/2022 22:08:03 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2563 ms
+12/01/2022 22:08:04 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 130.0382 ms
+12/01/2022 22:08:04 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.1707 ms
+12/01/2022 22:08:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.6726 ms
+12/01/2022 22:08:19 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.5116 ms
+12/01/2022 22:08:19 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 96.1174 ms
+12/01/2022 22:08:19 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.6053 ms
+12/01/2022 22:08:49 +01:00 HTTP "GET" "/api/soaps" responded 200 in 13.9885 ms
+12/01/2022 22:08:55 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1930 ms
+12/01/2022 22:08:55 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 107.1797 ms
+12/01/2022 22:08:56 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.6541 ms
+12/01/2022 22:09:37 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8419 ms
+12/01/2022 22:09:42 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.7267 ms
+12/01/2022 22:09:44 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3451 ms
+12/01/2022 22:09:49 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.6265 ms
+12/01/2022 22:09:49 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 128.0151 ms
+12/01/2022 22:09:49 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.7874 ms
+12/01/2022 22:10:01 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5940 ms
+12/01/2022 22:10:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5192 ms
+12/01/2022 22:10:27 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.6200 ms
+12/01/2022 22:10:27 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 185.9242 ms
+12/01/2022 22:10:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3394 ms
+12/01/2022 22:10:48 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.7017 ms
+12/01/2022 22:11:11 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.6143 ms
+12/01/2022 22:11:14 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 3.1849 ms
+12/01/2022 22:11:14 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 93.6121 ms
+12/01/2022 22:11:15 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5588 ms
+12/01/2022 22:11:38 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.4173 ms
+12/01/2022 22:11:41 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2258 ms
+12/01/2022 22:11:42 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 138.4891 ms
+12/01/2022 22:11:43 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1378 ms
+12/01/2022 22:11:51 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.4147 ms
+12/01/2022 22:11:57 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.7451 ms
+12/01/2022 22:11:57 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 85.1301 ms
+12/01/2022 22:11:58 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.0600 ms
+12/01/2022 22:12:19 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.1957 ms
+12/01/2022 22:12:24 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.5625 ms
+12/01/2022 22:12:24 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 122.0916 ms
+12/01/2022 22:12:25 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1242 ms
+12/01/2022 22:12:51 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5942 ms
+12/01/2022 22:12:54 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 1.0168 ms
+12/01/2022 22:12:54 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 93.7726 ms
+12/01/2022 22:12:54 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.2428 ms
+12/01/2022 22:13:10 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.6484 ms
+12/01/2022 22:13:12 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1337 ms
+12/01/2022 22:13:17 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1902 ms
+12/01/2022 22:13:17 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 123.5699 ms
+12/01/2022 22:13:18 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3663 ms
+12/01/2022 22:16:53 +01:00 HTTP "GET" "/api/soaps" responded 200 in 11.8186 ms
+12/01/2022 22:20:47 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1605 ms
+12/01/2022 22:21:19 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.4581 ms
+12/01/2022 22:21:25 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.2262 ms
+12/01/2022 22:21:25 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 52.0556 ms
+12/01/2022 22:21:26 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5430 ms
+12/01/2022 22:22:41 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8522 ms
+12/01/2022 22:22:45 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.5339 ms
+12/01/2022 22:22:45 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 94.6120 ms
+12/01/2022 22:22:46 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1769 ms
+12/01/2022 22:23:36 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.3919 ms
+12/01/2022 22:23:39 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1614 ms
+12/01/2022 22:23:39 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 107.5286 ms
+12/01/2022 22:23:40 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.3852 ms
+12/01/2022 22:24:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3223 ms
+12/01/2022 22:24:19 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.1844 ms
+12/01/2022 22:24:19 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 95.0958 ms
+12/01/2022 22:24:20 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.5786 ms
+12/01/2022 22:24:33 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.4540 ms
+12/01/2022 22:24:56 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.4857 ms
+12/01/2022 22:25:02 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.5880 ms
+12/01/2022 22:25:02 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 85.7503 ms
+12/01/2022 22:25:03 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.4003 ms
+12/01/2022 22:25:37 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8417 ms
+12/01/2022 22:25:49 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.0601 ms
+12/01/2022 22:25:49 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 31.0279 ms
+12/01/2022 22:25:49 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.1095 ms
+12/01/2022 22:26:10 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.5780 ms
+12/01/2022 22:26:15 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.3441 ms
+12/01/2022 22:26:15 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 73.6648 ms
+12/01/2022 22:26:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 16.1587 ms
+12/01/2022 22:26:33 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.6363 ms
+12/01/2022 22:26:35 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.4249 ms
+12/01/2022 22:26:36 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 74.8706 ms
+12/01/2022 22:26:36 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.9109 ms
+12/01/2022 22:27:28 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.2194 ms
+12/01/2022 22:27:32 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.7321 ms
+12/01/2022 22:27:32 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 94.7401 ms
+12/01/2022 22:27:33 +01:00 HTTP "GET" "/api/soaps" responded 200 in 0.8488 ms
+12/01/2022 22:27:48 +01:00 HTTP "OPTIONS" "/api/soaps/702db1d0-79bb-49c5-6986-08dad3c97427" responded 204 in 0.1455 ms
+12/01/2022 22:28:01 +01:00 Application is starting
+12/01/2022 22:28:04 +01:00 HTTP "GET" "/swagger" responded 302 in 73.9653 ms
+12/01/2022 22:28:05 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 305.5000 ms
+12/01/2022 22:28:05 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 45.3557 ms
+12/01/2022 22:28:05 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 44.1034 ms
+12/01/2022 22:28:05 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 45.0567 ms
+12/01/2022 22:28:06 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 726.4494 ms
+12/01/2022 22:28:41 +01:00 HTTP "GET" "/api/soaps" responded 200 in 328.3305 ms
+12/01/2022 22:28:43 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 8.0813 ms
+12/01/2022 22:28:43 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 610.2898 ms
+12/01/2022 22:28:44 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.6288 ms
+12/01/2022 22:30:15 +01:00 HTTP "GET" "/api/soaps" responded 200 in 11.5213 ms
+12/01/2022 22:30:17 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 1.0477 ms
+12/01/2022 22:30:17 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 81.9791 ms
+12/01/2022 22:30:18 +01:00 HTTP "GET" "/api/soaps" responded 200 in 12.3233 ms
+12/01/2022 22:30:21 +01:00 HTTP "OPTIONS" "/api/soaps/702db1d0-79bb-49c5-6986-08dad3c97427" responded 204 in 0.9351 ms
+12/01/2022 22:30:28 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.3010 ms
+12/01/2022 22:30:28 +01:00 HTTP "GET" "/api/balms" responded 200 in 72.9986 ms
+12/01/2022 22:30:28 +01:00 HTTP "DELETE" "/api/soaps/702db1d0-79bb-49c5-6986-08dad3c97427" responded 200 in 7061.5180 ms
+12/01/2022 22:30:30 +01:00 HTTP "GET" "/api/balms" responded 200 in 8.6100 ms
+12/01/2022 22:30:31 +01:00 HTTP "GET" "/api/soaps" responded 200 in 5.4736 ms
+12/01/2022 22:30:40 +01:00 Application is starting
+12/01/2022 22:30:44 +01:00 HTTP "GET" "/swagger" responded 302 in 80.8714 ms
+12/01/2022 22:30:44 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 250.8373 ms
+12/01/2022 22:30:44 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 67.8896 ms
+12/01/2022 22:30:44 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 67.8967 ms
+12/01/2022 22:30:44 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 67.8057 ms
+12/01/2022 22:30:45 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 751.8923 ms
+12/01/2022 22:30:50 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 19.8556 ms
+12/01/2022 22:30:51 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 625.7410 ms
+12/01/2022 22:30:51 +01:00 HTTP "GET" "/api/soaps" responded 200 in 235.9276 ms
+12/01/2022 22:32:42 +01:00 HTTP "GET" "/api/soaps" responded 200 in 18.3896 ms
+12/01/2022 22:33:04 +01:00 HTTP "GET" "/api/soaps" responded 200 in 11.4165 ms
+12/01/2022 22:33:11 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 11.5368 ms
+12/01/2022 22:33:12 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 180.7611 ms
+12/01/2022 22:33:13 +01:00 HTTP "GET" "/api/soaps" responded 200 in 11.5566 ms
+12/01/2022 22:33:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.3794 ms
+12/01/2022 22:35:46 +01:00 Application is starting
+12/01/2022 22:35:49 +01:00 HTTP "GET" "/swagger" responded 302 in 75.6358 ms
+12/01/2022 22:35:49 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 244.3233 ms
+12/01/2022 22:35:49 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 60.2097 ms
+12/01/2022 22:35:49 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 60.5285 ms
+12/01/2022 22:35:49 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 63.0158 ms
+12/01/2022 22:35:50 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 713.5084 ms
+12/01/2022 22:36:01 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 7.9914 ms
+12/01/2022 22:36:01 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 602.7331 ms
+12/01/2022 22:36:02 +01:00 HTTP "GET" "/api/soaps" responded 200 in 272.4677 ms
+12/01/2022 22:36:14 +01:00 HTTP "OPTIONS" "/api/soaps/b2cf7de2-27f9-4602-24e2-08dad3e34d49" responded 204 in 2.9415 ms
+12/01/2022 22:36:39 +01:00 HTTP "DELETE" "/api/soaps/b2cf7de2-27f9-4602-24e2-08dad3e34d49" responded 200 in 25201.9853 ms
+12/01/2022 22:37:22 +01:00 HTTP "GET" "/api/soaps" responded 200 in 71.1848 ms
+12/01/2022 22:37:30 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 3.8696 ms
+12/01/2022 22:37:30 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 54.0717 ms
+12/01/2022 22:37:31 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.7809 ms
+12/01/2022 22:37:34 +01:00 HTTP "OPTIONS" "/api/soaps/4b41a465-690f-43a0-24e3-08dad3e34d49" responded 204 in 1.1188 ms
+12/01/2022 22:37:35 +01:00 HTTP "DELETE" "/api/soaps/4b41a465-690f-43a0-24e3-08dad3e34d49" responded 200 in 1265.5466 ms
+12/01/2022 22:40:14 +01:00 HTTP "GET" "/api/soaps" responded 200 in 18.5038 ms
+12/01/2022 22:40:28 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 1.2134 ms
+12/01/2022 22:40:28 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 147.1719 ms
+12/01/2022 22:40:29 +01:00 HTTP "GET" "/api/soaps" responded 200 in 7.1891 ms
+12/01/2022 22:40:33 +01:00 HTTP "OPTIONS" "/api/soaps/0d3ed6cd-cbab-4b63-24e4-08dad3e34d49" responded 204 in 0.5447 ms
+12/01/2022 22:40:34 +01:00 HTTP "DELETE" "/api/soaps/0d3ed6cd-cbab-4b63-24e4-08dad3e34d49" responded 200 in 65.6412 ms
+12/01/2022 22:40:43 +01:00 HTTP "GET" "/api/balms" responded 200 in 52.3190 ms
+12/01/2022 22:40:43 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.0864 ms
+12/01/2022 22:40:54 +01:00 Application is starting
+12/01/2022 22:40:57 +01:00 HTTP "GET" "/swagger" responded 302 in 75.7434 ms
+12/01/2022 22:40:58 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 252.5332 ms
+12/01/2022 22:40:58 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 53.2989 ms
+12/01/2022 22:40:58 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 53.4223 ms
+12/01/2022 22:40:58 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 53.6850 ms
+12/01/2022 22:40:59 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 711.2947 ms
+12/01/2022 22:42:20 +01:00 Application is starting
+12/01/2022 22:42:22 +01:00 HTTP "GET" "/swagger" responded 302 in 79.8116 ms
+12/01/2022 22:42:23 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 241.3908 ms
+12/01/2022 22:42:23 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 50.0771 ms
+12/01/2022 22:42:23 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 50.4628 ms
+12/01/2022 22:42:23 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 50.3396 ms
+12/01/2022 22:42:24 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 724.8719 ms
+12/01/2022 22:42:28 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 20.6713 ms
+12/01/2022 22:42:29 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 926.9058 ms
+12/01/2022 22:42:30 +01:00 HTTP "GET" "/api/soaps" responded 200 in 247.7829 ms
+12/01/2022 22:42:32 +01:00 HTTP "OPTIONS" "/api/soaps/353a8c97-f869-4936-9790-08dad3e4bb0d" responded 204 in 1.1631 ms
+12/01/2022 22:42:36 +01:00 HTTP "DELETE" "/api/soaps/353a8c97-f869-4936-9790-08dad3e4bb0d" responded 500
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete(Guid id) in C:\repos\CleanArchitectureWebAPI.WebAPI\Controllers\SoapsController.cs:line 119
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\repos\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+12/01/2022 22:42:36 +01:00 HTTP "DELETE" "/api/soaps/353a8c97-f869-4936-9790-08dad3e4bb0d" responded 500 in 3832.0404 ms
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete(Guid id) in C:\repos\CleanArchitectureWebAPI.WebAPI\Controllers\SoapsController.cs:line 119
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\repos\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/01/2022 22:42:36 +01:00 An unhandled exception has occurred while executing the request.
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete(Guid id) in C:\repos\CleanArchitectureWebAPI.WebAPI\Controllers\SoapsController.cs:line 119
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext) in C:\repos\CleanArchitectureWebAPI.WebAPI\Middlewares\ErrorLoggingMiddleware.cs:line 25
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+12/01/2022 22:43:23 +01:00 HTTP "OPTIONS" "/api/account/signout" responded 204 in 9.6881 ms
+12/01/2022 22:43:23 +01:00 HTTP "POST" "/api/account/signout" responded 204 in 111.2991 ms
+12/01/2022 22:43:25 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 1.3972 ms
+12/01/2022 22:43:25 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 198.0461 ms
+12/01/2022 22:43:26 +01:00 HTTP "GET" "/api/soaps" responded 200 in 29.1755 ms
+12/01/2022 22:43:28 +01:00 HTTP "OPTIONS" "/api/soaps/c1c7fc1c-8342-4b04-9792-08dad3e4bb0d" responded 204 in 0.5689 ms
+12/01/2022 22:43:35 +01:00 HTTP "DELETE" "/api/soaps/c1c7fc1c-8342-4b04-9792-08dad3e4bb0d" responded 500
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete(Guid id)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext)
+12/01/2022 22:43:35 +01:00 HTTP "DELETE" "/api/soaps/c1c7fc1c-8342-4b04-9792-08dad3e4bb0d" responded 500 in 6685.8338 ms
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete(Guid id)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+12/01/2022 22:43:35 +01:00 An unhandled exception has occurred while executing the request.
+System.Exception: Exception of type 'System.Exception' was thrown.
+   at CleanArchitectureWebAPI.WebAPI.Controllers.SoapsController.Delete(Guid id)
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at CleanArchitectureWebAPI.WebAPI.Middlewares.ErrorLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.ResponseCaching.ResponseCachingMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+12/01/2022 22:43:45 +01:00 Application is starting
+12/01/2022 22:43:48 +01:00 HTTP "GET" "/swagger" responded 302 in 86.5056 ms
+12/01/2022 22:43:49 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 255.0446 ms
+12/01/2022 22:43:49 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 62.0242 ms
+12/01/2022 22:43:49 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 62.0897 ms
+12/01/2022 22:43:49 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 62.7304 ms
+12/01/2022 22:43:50 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 745.8037 ms
+12/01/2022 22:44:41 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 42.4291 ms
+12/01/2022 22:44:41 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 630.3839 ms
+12/01/2022 22:44:42 +01:00 HTTP "GET" "/api/soaps" responded 200 in 268.2281 ms
+12/01/2022 22:44:45 +01:00 HTTP "OPTIONS" "/api/soaps/c3b84f06-c74f-4a13-9791-08dad3e4bb0d" responded 204 in 1.1140 ms
+12/01/2022 22:44:45 +01:00 HTTP "DELETE" "/api/soaps/c3b84f06-c74f-4a13-9791-08dad3e4bb0d" responded 200 in 298.0984 ms
+12/01/2022 22:44:57 +01:00 HTTP "OPTIONS" "/api/soaps/c3b84f06-c74f-4a13-9791-08dad3e4bb0d" responded 204 in 1.5543 ms
+12/01/2022 22:44:57 +01:00 HTTP "DELETE" "/api/soaps/c3b84f06-c74f-4a13-9791-08dad3e4bb0d" responded 404 in 75.9070 ms
+12/01/2022 22:45:00 +01:00 HTTP "GET" "/api/balms" responded 200 in 51.3806 ms
+12/01/2022 22:45:01 +01:00 HTTP "GET" "/api/soaps" responded 200 in 16.4580 ms
+12/01/2022 22:45:09 +01:00 Application is starting
+12/01/2022 22:45:12 +01:00 HTTP "GET" "/swagger" responded 302 in 75.9702 ms
+12/01/2022 22:45:12 +01:00 HTTP "GET" "/swagger/index.html" responded 200 in 293.5666 ms
+12/01/2022 22:45:12 +01:00 HTTP "GET" "/swagger/swagger-ui-standalone-preset.js" responded 200 in 63.5053 ms
+12/01/2022 22:45:12 +01:00 HTTP "GET" "/swagger/swagger-ui-bundle.js" responded 200 in 63.8078 ms
+12/01/2022 22:45:12 +01:00 HTTP "GET" "/swagger/swagger-ui.css" responded 200 in 64.4717 ms
+12/01/2022 22:45:14 +01:00 HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 724.1959 ms
+12/01/2022 22:45:20 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 11.3255 ms
+12/01/2022 22:45:21 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 473.3136 ms
+12/01/2022 22:45:21 +01:00 HTTP "GET" "/api/soaps" responded 200 in 284.5673 ms
+12/01/2022 22:45:25 +01:00 HTTP "OPTIONS" "/api/soaps/6a115570-b331-4e6a-4bb1-08dad3e552ec" responded 204 in 0.6265 ms
+12/01/2022 22:45:25 +01:00 HTTP "DELETE" "/api/soaps/6a115570-b331-4e6a-4bb1-08dad3e552ec" responded 200 in 98.3351 ms
+12/01/2022 22:46:09 +01:00 HTTP "GET" "/api/soaps" responded 200 in 19.2191 ms
+12/01/2022 22:46:11 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 4.7427 ms
+12/01/2022 22:46:11 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 149.4772 ms
+12/01/2022 22:46:12 +01:00 HTTP "GET" "/api/soaps" responded 200 in 14.8530 ms
+12/01/2022 23:05:43 +01:00 HTTP "GET" "/api/soaps" responded 200 in 67.1860 ms
+12/01/2022 23:08:07 +01:00 HTTP "GET" "/api/soaps" responded 200 in 37.4614 ms
+12/01/2022 23:08:12 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.1540 ms
+12/01/2022 23:09:30 +01:00 HTTP "GET" "/api/soaps" responded 200 in 11.0073 ms
+12/01/2022 23:10:01 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.4505 ms
+12/01/2022 23:10:32 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.4756 ms
+12/01/2022 23:12:18 +01:00 HTTP "GET" "/api/soaps" responded 200 in 13.5598 ms
+12/01/2022 23:14:16 +01:00 HTTP "GET" "/api/soaps" responded 200 in 15.9128 ms
+12/01/2022 23:15:24 +01:00 HTTP "GET" "/api/soaps" responded 200 in 12.6258 ms
+12/01/2022 23:15:26 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.4279 ms
+12/01/2022 23:15:26 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 228.7364 ms
+12/01/2022 23:15:27 +01:00 HTTP "GET" "/api/soaps" responded 200 in 3.8059 ms
+12/01/2022 23:15:51 +01:00 HTTP "GET" "/api/soaps" responded 200 in 2.7890 ms
+12/01/2022 23:15:55 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.4676 ms
+12/01/2022 23:15:55 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 132.9826 ms
+12/01/2022 23:15:56 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.3195 ms
+12/01/2022 23:17:24 +01:00 HTTP "GET" "/api/soaps" responded 200 in 10.4264 ms
+12/01/2022 23:17:32 +01:00 HTTP "GET" "/api/soaps" responded 200 in 1.7871 ms
+12/01/2022 23:22:59 +01:00 HTTP "GET" "/api/soaps" responded 200 in 9.5940 ms
+12/01/2022 23:23:30 +01:00 HTTP "OPTIONS" "/api/account/signin" responded 204 in 0.3533 ms
+12/01/2022 23:23:30 +01:00 HTTP "POST" "/api/account/signin" responded 200 in 88.8634 ms
+12/01/2022 23:23:31 +01:00 HTTP "GET" "/api/soaps" responded 200 in 4.5030 ms
+12/01/2022 23:32:12 +01:00 HTTP "GET" "/api/soaps" responded 200 in 6.4884 ms

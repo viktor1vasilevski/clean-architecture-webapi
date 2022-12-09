@@ -21,6 +21,8 @@ namespace CleanArchitectureWebAPI.Application.Services
         public SoapViewModel AddSoap(SoapViewModel soapRequest)
         {
             var soap = _mapper.Map<Soap>(soapRequest);
+            soap.Id = Guid.NewGuid();
+
             var addedSoap = _soapRepository.Add(soap);
 
             _soapRepository.SaveChanges();

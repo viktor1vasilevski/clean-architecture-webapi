@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 using Microsoft.Extensions.Caching.Memory;
 using NSwag.Annotations;
 using System;
@@ -85,7 +86,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         {
             if (model.Id == Guid.Empty)
             {
-                _soapService.AddSoap(model);
+                model = _soapService.AddSoap(model);
             }
             else
             {
@@ -105,16 +106,17 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         public IActionResult Delete(Guid id)
         {
             var soap = _soapService.GetSoapById(id);
+            bool status = false; ;
             
             if (soap != null)
             {
-                _soapService.DeleteSoap(id);
+                status = _soapService.DeleteSoap(id);
                 _memoryCache.Remove(_allSoapsKey);
-                return Ok(soap);
+                return Ok(status);
             }
             else
             {
-                return NotFound(id);
+                return NotFound(status);
             }
         }
 

@@ -94,7 +94,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         {
             if (model.Id == Guid.Empty)
             {
-                _balmService.AddBalm(model);
+                model = _balmService.AddBalm(model);
             }
             else
             {
@@ -116,15 +116,16 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         public IActionResult Delete(Guid id)
         {
             var balm = _balmService.GetBalmById(id);
+            var status = false;
             if (balm != null)
             {
-                _balmService.DeleteBalm(id);
+                status = _balmService.DeleteBalm(id);
                 _memoryCache.Remove(_allBalmsKey);
                 return Ok(balm);
             }
             else
             {
-                return NotFound(id);
+                return NotFound(status);
             }
                 
         }

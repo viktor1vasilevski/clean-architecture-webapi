@@ -24,6 +24,8 @@ namespace CleanArchitectureWebAPI.Application.Services
         public BalmViewModel AddBalm(BalmViewModel balmRequest)
         {
             var balm = _mapper.Map<Balm>(balmRequest);
+            balm.Id = Guid.NewGuid();
+
             var addedBalm = _balmRepository.Add(balm);
 
             _balmRepository.SaveChanges();

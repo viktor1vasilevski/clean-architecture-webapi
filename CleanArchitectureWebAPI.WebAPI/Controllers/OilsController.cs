@@ -84,7 +84,7 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         {
             if (model.Id == Guid.Empty)
             {
-                _oilService.AddOil(model);
+                model = _oilService.AddOil(model);
             }
             else
             {
@@ -104,16 +104,17 @@ namespace CleanArchitectureWebAPI.WebAPI.Controllers
         public IActionResult Delete(Guid id)
         {
             var oil = _oilService.GetOilById(id);
-            
+            var status = false;
+
             if (oil != null)
             {
-                _oilService.DeleteOil(id);
+                status = _oilService.DeleteOil(id);
                 _memoryCache.Remove(_allOilsKey);
-                return Ok(oil);
+                return Ok(status);
             }
             else
             {
-                return NotFound(id);
+                return NotFound(status);
             }               
         }
     }

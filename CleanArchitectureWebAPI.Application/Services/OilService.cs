@@ -21,6 +21,8 @@ namespace CleanArchitectureWebAPI.Application.Services
         public OilViewModel AddOil(OilViewModel oilRequest)
         {
             var oil = _mapper.Map<Oil>(oilRequest);
+            oil.Id = Guid.NewGuid();
+
             var addedOil = _oilRepository.Add(oil);
 
             _oilRepository.SaveChanges();

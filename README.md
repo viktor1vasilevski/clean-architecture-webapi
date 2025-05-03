@@ -6,6 +6,9 @@ This is a WebAPI Project, implemented with Clean Architecture pattern. The code 
 You can add your own models, validations, logic, etc. You can also create MVC project on top of it, or just 
 use it as a api, deployed locally or publish on some server and use some front-end framework to show the data.
 
+The front-end for this project is available on GitHub, and can be found [here]([https://github.com/yourusername/mock-booking-system-frontend](https://github.com/viktor1vasilevski/beard-products-ui)).
+
+
 ## Installation
 
 1.  Download the code - Clone the repository or download the zip file
